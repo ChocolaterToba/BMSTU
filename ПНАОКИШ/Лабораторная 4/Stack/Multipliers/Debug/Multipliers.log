@@ -1,0 +1,9 @@
+﻿  multipliers.cpp
+multipliers.obj : error LNK2019: ссылка на неразрешенный внешний символ "public: __thiscall MyStack<int>::MyStack<int>(void)" (??0?$MyStack@H@@QAE@XZ) в функции _main
+multipliers.obj : error LNK2019: ссылка на неразрешенный внешний символ "public: __thiscall MyStack<int>::~MyStack<int>(void)" (??1?$MyStack@H@@QAE@XZ) в функции _main
+multipliers.obj : error LNK2019: ссылка на неразрешенный внешний символ "public: bool __thiscall MyStack<int>::empty(void)" (?empty@?$MyStack@H@@QAE_NXZ) в функции _main
+multipliers.obj : error LNK2019: ссылка на неразрешенный внешний символ "public: bool __thiscall MyStack<int>::push(int)" (?push@?$MyStack@H@@QAE_NH@Z) в функции "void __cdecl get_multipliers(int,class MyStack<int> &)" (?get_multipliers@@YAXHAAV?$MyStack@H@@@Z)
+multipliers.obj : error LNK2019: ссылка на неразрешенный внешний символ "public: bool __thiscall MyStack<int>::pop(void)" (?pop@?$MyStack@H@@QAE_NXZ) в функции _main
+multipliers.obj : error LNK2019: ссылка на неразрешенный внешний символ "public: int * __thiscall MyStack<int>::top_inf(void)" (?top_inf@?$MyStack@H@@QAEPAHXZ) в функции _main
+multipliers.obj : error LNK2019: ссылка на неразрешенный внешний символ "void __cdecl get_multipliers<int>(int,class MyStack<int> &)" (??$get_multipliers@H@@YAXHAAV?$MyStack@H@@@Z) в функции _main
+C:\Users\Михаил\Documents\Решения на C++\ПНАОКИШ\Лабораторная 4\Stack\Debug\Multipliers.exe : fatal error LNK1120: неразрешенных внешних элементов: 7

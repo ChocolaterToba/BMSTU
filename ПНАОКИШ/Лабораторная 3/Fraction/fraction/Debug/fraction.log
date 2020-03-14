@@ -1,0 +1,19 @@
+﻿Сборка начата 10.03.2020 12:30:31.
+     1>Проект "D:\ПКиШ-ИУ5-21б\Агличеев\Лабораторная 3\Fraction\fraction\fraction.vcxproj" в узле 2 (целевые объекты Build).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt fraction.cpp fractionOperators.cpp
+         fractionOperators.cpp
+         fraction.cpp
+     1>d:\пкиш-иу5-21б\агличеев\лабораторная 3\fraction\fraction\fraction.cpp(16): warning C4244: =: преобразование "double" в "int", возможна потеря данных
+     1>d:\пкиш-иу5-21б\агличеев\лабораторная 3\fraction\fraction\fraction.cpp(17): warning C4244: =: преобразование "double" в "int", возможна потеря данных
+     1>d:\пкиш-иу5-21б\агличеев\лабораторная 3\fraction\fraction\fraction.cpp(65): warning C4018: <: несоответствие типов со знаком и без знака
+         Создание кода...
+       Lib:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\Lib.exe /OUT:"D:\ПКиШ-ИУ5-21б\Агличеев\Лабораторная 3\Fraction\Debug\fraction.lib" /NOLOGO Debug\fraction.obj
+         Debug\fractionOperators.obj
+         fraction.vcxproj -> D:\ПКиШ-ИУ5-21б\Агличеев\Лабораторная 3\Fraction\Debug\fraction.lib
+     1>Построение проекта "D:\ПКиШ-ИУ5-21б\Агличеев\Лабораторная 3\Fraction\fraction\fraction.vcxproj" завершено (целевые объекты Build).
+
+Сборка успешно завершена.
+
+Затраченное время: 00:00:01.21

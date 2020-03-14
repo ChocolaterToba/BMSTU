@@ -1,0 +1,12 @@
+﻿Сборка начата 10.03.2020 15:57:11.
+     1>Проект "D:\ПКиШ-ИУ5-21б\Агличеев\Лабораторная 5\Vector\Vector\Vector.vcxproj" в узле 2 (целевые объекты Build).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt vector.cpp
+         vector.cpp
+     1>d:\пкиш-иу5-21б\агличеев\лабораторная 5\vector\vector\vector.cpp(41): warning C4244: *=: преобразование "double" в "int", возможна потеря данных
+     1>d:\пкиш-иу5-21б\агличеев\лабораторная 5\vector\vector\vector.cpp(103): error C4716: MyVector::operator=: должна возвращать значение
+     1>Построение проекта "D:\ПКиШ-ИУ5-21б\Агличеев\Лабораторная 5\Vector\Vector\Vector.vcxproj" завершено (целевые объекты Build) с ошибкой.
+
+СБОЙ сборки.
+
+Затраченное время: 00:00:00.62
