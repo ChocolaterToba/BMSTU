@@ -1,0 +1,7 @@
+﻿  Taylor.cpp
+C:\Users\Михаил\Documents\Решения на C++\Taylor\Taylor\Taylor.cpp(23,36): warning C4244:  аргумент: преобразование "double" в "std::streamsize", возможна потеря данных
+C:\Users\Михаил\Documents\Решения на C++\Taylor\Taylor\Taylor.cpp(24,36): warning C4244:  аргумент: преобразование "double" в "std::streamsize", возможна потеря данных
+C:\Users\Михаил\Documents\Решения на C++\Taylor\Taylor\Taylor.cpp(39,37): warning C4244:  аргумент: преобразование "double" в "std::streamsize", возможна потеря данных
+C:\Users\Михаил\Documents\Решения на C++\Taylor\Taylor\Taylor.cpp(40,45): warning C4244:  аргумент: преобразование "double" в "std::streamsize", возможна потеря данных
+C:\Users\Михаил\Documents\Решения на C++\Taylor\Taylor\Taylor.cpp(42,37): warning C4244:  аргумент: преобразование "double" в "std::streamsize", возможна потеря данных
+  Taylor.vcxproj -> C:\Users\Михаил\Documents\Решения на C++\Taylor\Debug\Taylor.exe
