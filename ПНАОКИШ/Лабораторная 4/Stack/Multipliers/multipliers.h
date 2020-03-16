@@ -5,8 +5,7 @@
 
 int main();
 
-template <class DATA>
-void get_multipliers(int, MyStack<DATA>&);
+void get_multipliers(int, MyStack<int>&);
 
 
 

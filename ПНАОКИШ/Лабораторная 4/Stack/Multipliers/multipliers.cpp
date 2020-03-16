@@ -1,6 +1,6 @@
 #include <iostream>
 #include "multipliers.h"
-#include "..\Stack\My_stack.h"
+#include "..\Stack\my_stack.h"
 
 using namespace std;
 
@@ -8,24 +8,26 @@ int main() {
 	int number;
 	cout << "Please input a number to get it's multipliers: ";
 	cin >> number;
-	cout << endl << endl;
+	cout << endl;
 	MyStack<int> multipliers;
 	MyStack<int> other;
 	get_multipliers(number, multipliers);
 	cout << number << "=";
 	while (!multipliers.empty()) {
-		other.push(*(multipliers.top_inf()));
-		cout << *(multipliers.top_inf()) << "*";
+		other.push(multipliers.top_inf());
+		cout << multipliers.top_inf() << "*";
 		multipliers.pop();
 	}
 	cout << '\b' << '\0' << '\b' << endl;
 
 	cout << number << "=";
 	while (!other.empty()) {
-		cout << *(other.top_inf()) << "*";
+		cout << other.top_inf() << "*";
 		other.pop();
 	}
 	cout << '\b' << '\0' << '\b' << endl;
+	system("pause");
+	return 1;
 }
 
 void get_multipliers(int number, MyStack<int>& multipliers) {

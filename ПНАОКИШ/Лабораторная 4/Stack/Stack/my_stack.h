@@ -1,30 +1,76 @@
 #ifndef MY_STACK_H
 #define MY_STACK_H
 
-//Шаблонный класс ListNode (узел односвязного списка)
+#include "pch.h"
+#include "framework.h"
+
+//РЁР°Р±Р»РѕРЅРЅС‹Р№ РєР»Р°СЃСЃ ListNode (СѓР·РµР» РѕРґРЅРѕСЃРІСЏР·РЅРѕРіРѕ СЃРїРёСЃРєР°)
 template <class INF, class FRIEND>
-class ListNode				//узел списка
+class ListNode				//СѓР·РµР» СЃРїРёСЃРєР°
 {
 private:
-	INF d;             			     //информационная часть узла
-	ListNode* next;   		         //указатель на следующий узел списка
-	ListNode(void) { next = NULL; }  //конструктор 
+	INF d;             			     //РёРЅС„РѕСЂРјР°С†РёРѕРЅРЅР°СЏ С‡Р°СЃС‚СЊ СѓР·Р»Р°
+	ListNode* next;   		         //СѓРєР°Р·Р°С‚РµР»СЊ РЅР° СЃР»РµРґСѓСЋС‰РёР№ СѓР·РµР» СЃРїРёСЃРєР°
+	ListNode(void) { next = NULL; }  //РєРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ 
 	friend FRIEND;
 };
 
-//Шаблонный класс MyStack на основе односвязного списка.
+//РЁР°Р±Р»РѕРЅРЅС‹Р№ РєР»Р°СЃСЃ MyStack РЅР° РѕСЃРЅРѕРІРµ РѕРґРЅРѕСЃРІСЏР·РЅРѕРіРѕ СЃРїРёСЃРєР°.
 template <class INF>
 class MyStack
 {
 	typedef class ListNode < INF, MyStack <INF> > Node;
 	Node* top;
 public:
-	MyStack(void);		// конструктор
-	~MyStack(void);         	// освободить динамическую память
-	bool empty(void);		// стек пустой?
-	bool push(INF n);		// добавить узел в вершину стека
-	bool pop(void);		// удалить узел из вершины стека
-	INF* top_inf(void);		//считать информацию из вершины стека
+	MyStack(void);		// РєРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ
+	~MyStack(void);         	// РѕСЃРІРѕР±РѕРґРёС‚СЊ РґРёРЅР°РјРёС‡РµСЃРєСѓСЋ РїР°РјСЏС‚СЊ
+	bool empty(void);		// СЃС‚РµРє РїСѓСЃС‚РѕР№?
+	bool push(INF n);		// РґРѕР±Р°РІРёС‚СЊ СѓР·РµР» РІ РІРµСЂС€РёРЅСѓ СЃС‚РµРєР°
+	bool pop(void);		// СѓРґР°Р»РёС‚СЊ СѓР·РµР» РёР· РІРµСЂС€РёРЅС‹ СЃС‚РµРєР°
+	INF top_inf(void);		//СЃС‡РёС‚Р°С‚СЊ РёРЅС„РѕСЂРјР°С†РёСЋ РёР· РІРµСЂС€РёРЅС‹ СЃС‚РµРєР°
 };
+
+template <class INF>
+MyStack<INF>::MyStack(void) {
+	top = nullptr;
+}
+
+template <class INF>
+MyStack<INF>::~MyStack(void) {
+	while (top != nullptr) {
+		Node* temp = top;
+		top = top->next;
+		delete temp;
+	}
+}
+
+template <class INF>
+bool MyStack<INF>::empty(void) {
+	return (top == nullptr);
+}
+
+template <class INF>
+bool MyStack<INF>::push(INF data) {
+	Node* node = new Node();
+	node->next = top;
+	node->d = data;
+	top = node;
+	return true;
+}
+
+template <class INF>
+bool MyStack<INF>::pop(void) {
+	if (!empty()) {
+		top = top->next;
+		return true;
+	}
+	return false;
+}
+
+template <class INF>
+INF MyStack<INF>::top_inf(void) {
+	return top->d;
+}
+
 
 #endif
