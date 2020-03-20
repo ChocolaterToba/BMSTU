@@ -73,4 +73,4 @@ INF MyStack<INF>::top_inf(void) {
 }
 
 
-#endif
+#endif //  MY_STACK_H

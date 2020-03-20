@@ -6,13 +6,16 @@
 
 using namespace std;
 
-const int WORD_LEN = 80;
+const int WORD_LEN = 200;
 const int DEFAULT_SIZE = 8;
 
 MyVector::MyVector(char* element) {
 	maxsize = DEFAULT_SIZE;
 	size = 1;
 	pdata = new char*[maxsize];
+	for (int i = 0; i < maxsize; i++) {
+		pdata[i] = nullptr;
+	}
 	pdata[0] = new char[WORD_LEN];
 	strcpy_s(pdata[0], WORD_LEN, element);
 }
@@ -28,27 +31,31 @@ MyVector::MyVector(const MyVector& vector) {
 }
 
 MyVector::~MyVector() {
-	for (int i = 0; i < size; i++) {
-		if (pdata[i] != nullptr) {
-			delete[] pdata[i];
-		}
+	int i = 0;
+	while (i < size && pdata[i] != nullptr) {
+		delete[] pdata[i];
+		pdata[i] = nullptr;
+		i++;
 	}
 	pdata = nullptr;
 }
 
 void MyVector::resize() {
 	if (size == maxsize) {
-		maxsize *= 1.5;
-		pdata = copy_data(pdata, maxsize);
+		maxsize = maxsize * 3 / 2;
+		pdata = copy_data(pdata, maxsize, size);
 	}
 	else if (size < maxsize / 2) {
-		maxsize = max(maxsize * 2 / 3, DEFAULT_SIZE);
-		pdata = copy_data(pdata, maxsize);
+		if (maxsize * 2 / 3 > DEFAULT_SIZE) {
+			maxsize = maxsize * 2 / 3;
+			pdata = copy_data(pdata, maxsize, size);
+		}
 	}
 }
 
 
 void MyVector::add_element(char* element) {
+	pdata[size] = new char[WORD_LEN];
 	strcpy_s(pdata[size], WORD_LEN, element);
 	size++;
 	sort();
@@ -72,7 +79,7 @@ void MyVector::delete_element(char* element) {
 
 int MyVector::find(char* element) {
 	for(int i = 0; i < size; i++) {
-		if (strcpy_s(pdata[i], size, element) == 0) {
+		if (strcmp(pdata[i], element) == 0) {
 			return i;
 		}
 	}
@@ -133,11 +140,15 @@ void swap(char*& first, char*& second) {
 	second = first;
 }
 
-char** copy_data(char** source, int length) {
+char** copy_data(char** source, int length, int source_length) {
 	char** result = new char*[length];
+	for (int i = 0; i < length; i++) {
+		result[i] = nullptr;
+	}
 	int i = 0;
-	while (source[i] != nullptr) {
-		result[i] = source[i];
+	while (i < min(length, source_length)) {
+		result[i] = new char[WORD_LEN];
+		strcpy_s(result[i], WORD_LEN, source[i]);
 		i++;
 	}
 	return result;

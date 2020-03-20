@@ -1,0 +1,2 @@
+C:\Users\Михаил\Documents\Решения на C++\ПНАОКИШ\Лабораторная 5\Vector\Debug\Vector.pdb
+C:\Users\Михаил\Documents\Решения на C++\ПНАОКИШ\Лабораторная 5\Vector\Vector\Debug\Vector.pdb

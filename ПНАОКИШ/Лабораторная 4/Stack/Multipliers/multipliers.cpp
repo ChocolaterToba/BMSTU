@@ -1,6 +1,5 @@
 #include <iostream>
 #include "multipliers.h"
-#include "..\Stack\my_stack.h"
 
 using namespace std;
 
@@ -9,9 +8,15 @@ int main() {
 	cout << "Please input a number to get it's multipliers: ";
 	cin >> number;
 	cout << endl;
+	if (number <= 0) {
+		cout << "Multipliers of non-positive numbers are undefined!" << endl;
+		system("pause");
+		return 0;
+	}
 	MyStack<int> multipliers;
 	MyStack<int> other;
 	get_multipliers(number, multipliers);
+
 	cout << number << "=";
 	while (!multipliers.empty()) {
 		other.push(multipliers.top_inf());
@@ -26,6 +31,7 @@ int main() {
 		other.pop();
 	}
 	cout << '\b' << '\0' << '\b' << endl;
+
 	system("pause");
 	return 1;
 }
@@ -35,14 +41,12 @@ void get_multipliers(int number, MyStack<int>& multipliers) {
 		cout << "This function is undefined for numbers less that or equal to 0!" << endl << endl;
 		return;
 	}
-	if (number == 1) {
-		multipliers.push(1);
-		return;
-	}
-	for (int i = 2; i <= number; i++) {
+
+	for (int i = 2; i < number; i++) {
 		while (number % i == 0) {
 			multipliers.push(i);
 			number /= i;
 		}
 	}
+	multipliers.push(number);
 }

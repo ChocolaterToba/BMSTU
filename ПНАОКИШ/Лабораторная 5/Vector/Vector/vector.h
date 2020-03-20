@@ -1,5 +1,5 @@
-#ifndef __VECTOR_H__
-#define __VECTOR_H__
+#ifndef VECTOR_H
+#define VECTOR_H
 
 class MyVector {
 public:
@@ -31,6 +31,6 @@ private:
 void qsort(char**, int, int);
 void swap(char*&, char*&);
 
-char** copy_data(char**, int);
+char** copy_data(char**, int, int);
 
-#endif  //  __VECTOR_H__
+#endif  //  VECTOR_H

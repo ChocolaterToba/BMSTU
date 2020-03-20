@@ -1,6 +1,6 @@
-#ifndef __CHECK_H__
-#define __CHECK_H__
+#ifndef CHECK_H
+#define CHECK_H
 
 int main();
 
-#endif  //  __CHECK_H__
+#endif  //  CHECK_H
