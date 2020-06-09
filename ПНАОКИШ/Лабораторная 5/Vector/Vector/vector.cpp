@@ -6,14 +6,14 @@
 
 using namespace std;
 
-const int WORD_LEN = 200;
-const int DEFAULT_SIZE = 8;
+const size_t WORD_LEN = 200;
+const size_t DEFAULT_SIZE = 8;
 
 MyVector::MyVector(char* element) {
 	maxsize = DEFAULT_SIZE;
 	size = 1;
 	pdata = new char*[maxsize];
-	for (int i = 0; i < maxsize; i++) {
+	for (size_t i = 0; i < maxsize; i++) {
 		pdata[i] = nullptr;
 	}
 	pdata[0] = new char[WORD_LEN];
@@ -24,14 +24,14 @@ MyVector::MyVector(const MyVector& vector) {
 	maxsize = vector.maxsize;
 	size = vector.size;
 	pdata = new char*[maxsize];
-	for (int i = 0; i < size; i++) {
+	for (size_t i = 0; i < size; i++) {
 		pdata[i] = new char[WORD_LEN];
 		strcpy_s(pdata[i], WORD_LEN, vector.pdata[i]);
 	}
 }
 
 MyVector::~MyVector() {
-	int i = 0;
+	size_t i = 0;
 	while (i < size && pdata[i] != nullptr) {
 		delete[] pdata[i];
 		pdata[i] = nullptr;
@@ -63,7 +63,7 @@ void MyVector::add_element(char* element) {
 }
 
 void MyVector::delete_element(char* element) {
-	int i = find(element);
+	size_t i = find(element);
 	if (i != -1) {
 		delete[] pdata[i];
 		for (i; i < size - 1; i++) {
@@ -72,13 +72,13 @@ void MyVector::delete_element(char* element) {
 		pdata[size - 1] = nullptr;
 		size--;
 		resize();
-		cout << "Удаление произошло успешно" << endl;
+		cout << "Successfully deleted an element" << endl;
 	}
 	cout << endl;
 }
 
 int MyVector::find(char* element) {
-	for(int i = 0; i < size; i++) {
+	for(size_t i = 0; i < size; i++) {
 		if (strcmp(pdata[i], element) == 0) {
 			return i;
 		}
@@ -91,7 +91,7 @@ void MyVector::sort() {
 	qsort(pdata, 0, size - 1);
 }
 
-char* MyVector::operator[] (int i) {
+char* MyVector::operator[] (size_t i) {
 	if (i < size) {
 		return pdata[i];
 	}
@@ -103,34 +103,34 @@ void MyVector::operator= (MyVector source) {
 	maxsize = source.maxsize;
 	size = source.size;
 	pdata = new char*[maxsize];
-	for (int i = 0; i < size; i++) {
+	for (size_t i = 0; i < size; i++) {
 		pdata[i] = new char[WORD_LEN];
 		strcpy_s(pdata[i], size, source.pdata[i]);
 	}
 }
 
-int MyVector::Size() {
+size_t MyVector::Size() {
 	return size;
 }
-int MyVector::Maxsize() {
+size_t MyVector::Maxsize() {
 	return maxsize;
 }
 
-void qsort(char** arr, int start, int end) { // Quick sort from start to end including both.
+void qsort(char** arr, size_t start, size_t end) { // Quick sort from start to end including both.
 	char** pivot = arr + end; // Element to be placed at the right position
-	int i = start - 1, j;
+	size_t i = start, j;
 	for (j = start; j < end; j++) {
-		if (strcpy_s(arr[j], WORD_LEN, *pivot) < 0) {
-			i++;
+		if (strcmp(arr[j], *pivot) < 0) {
 			swap(arr[i], arr[j]);
+			++i;
 		}
 	}
-	swap(arr[i + 1], arr[end]);
-	if (i > start) {
-		qsort(arr, start, i); // Sorting "less than pivot" and "more than pivot" arrays.
+	swap(arr[i], arr[end]);
+	if (i - 1 > start) {
+		qsort(arr, start, i - 1); // Sorting "less than pivot" and "more than pivot" arrays.
 	}
-	if (end > i + 2) {
-	    qsort(arr, i + 2, end);
+	if (end > i + 1) {
+	    qsort(arr, i + 1, end);
 	}
 }
 
@@ -140,12 +140,12 @@ void swap(char*& first, char*& second) {
 	second = first;
 }
 
-char** copy_data(char** source, int length, int source_length) {
+char** copy_data(char** source, size_t length, size_t source_length) {
 	char** result = new char*[length];
-	for (int i = 0; i < length; i++) {
+	for (size_t i = 0; i < length; i++) {
 		result[i] = nullptr;
 	}
-	int i = 0;
+	size_t i = 0;
 	while (i < min(length, source_length)) {
 		result[i] = new char[WORD_LEN];
 		strcpy_s(result[i], WORD_LEN, source[i]);

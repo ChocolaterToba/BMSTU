@@ -1,0 +1,2 @@
+C:\Users\Tobar\Documents\МГТУ ДЗ и прочее\Программирование\ПНАОКИШ\Лабораторная 3\Fraction\Debug\fraction.pdb
+C:\Users\Tobar\Documents\МГТУ ДЗ и прочее\Программирование\ПНАОКИШ\Лабораторная 3\Fraction\fraction\Debug\fraction.pdb

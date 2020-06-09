@@ -1,9 +1,5 @@
-﻿Сборка начата 10.03.2020 12:35:47.
-     1>Проект "D:\ПКиШ-ИУ5-21б\Агличеев\Лабораторная 3\Fraction\fractionsCheck\fractionsCheck.vcxproj" в узле 2 (целевые объекты Build).
-     1>Link:
-         fractionsCheck.vcxproj -> D:\ПКиШ-ИУ5-21б\Агличеев\Лабораторная 3\Fraction\Debug\fractionsCheck.exe
-     1>Построение проекта "D:\ПКиШ-ИУ5-21б\Агличеев\Лабораторная 3\Fraction\fractionsCheck\fractionsCheck.vcxproj" завершено (целевые объекты Build).
-
-Сборка успешно завершена.
-
-Затраченное время: 00:00:00.09
+﻿  fractionsCheck.cpp
+C:\Users\Tobar\Documents\МГТУ ДЗ и прочее\Программирование\ПНАОКИШ\Лабораторная 3\Fraction\fractionsCheck\fraction.h(45,21): warning C4273: round: несовместимое связывание dll
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\corecrt_math.h(533,44): message : см. предыдущее определение "round"
+     Создается библиотека C:\Users\Tobar\Documents\МГТУ ДЗ и прочее\Программирование\ПНАОКИШ\Лабораторная 3\Fraction\Debug\fractionsCheck.lib и объект C:\Users\Tobar\Documents\МГТУ ДЗ и прочее\Программирование\ПНАОКИШ\Лабораторная 3\Fraction\Debug\fractionsCheck.exp
+  fractionsCheck.vcxproj -> C:\Users\Tobar\Documents\МГТУ ДЗ и прочее\Программирование\ПНАОКИШ\Лабораторная 3\Fraction\Debug\fractionsCheck.exe

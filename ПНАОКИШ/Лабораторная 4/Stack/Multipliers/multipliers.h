@@ -7,6 +7,4 @@ int main();
 
 void get_multipliers(int, MyStack<int>&);
 
-
-
 #endif  //  MULTIPLIERS_H

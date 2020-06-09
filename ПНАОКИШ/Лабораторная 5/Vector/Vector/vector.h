@@ -13,24 +13,24 @@ public:
 
 	void sort();
 
-	char* operator[] (int);
+	char* operator[] (size_t);
 	void operator= (MyVector);
 
-	int Size();
-	int Maxsize();
+	size_t Size();
+	size_t Maxsize();
 
 protected:
-	int maxsize;
-	int size;
+	size_t maxsize;
+	size_t size;
 	char** pdata;
 
 private:
     void resize();
 };
 
-void qsort(char**, int, int);
+void qsort(char**, size_t, size_t);
 void swap(char*&, char*&);
 
-char** copy_data(char**, int, int);
+char** copy_data(char**, size_t, size_t);
 
 #endif  //  VECTOR_H
