@@ -144,7 +144,6 @@
     <ClCompile Include="Term.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="main.h" />
     <ClInclude Include="Polynomial.h" />
     <ClInclude Include="Term.h" />
   </ItemGroup>
