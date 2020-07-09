@@ -1,0 +1,16 @@
+﻿Построение начато 08.07.2020 20:17:09.
+     1>Проект "C:\Users\Tobar\Documents\МГТУ ДЗ и прочее\Программирование\ПНАОКИШ\Practice\Practice\Practice.vcxproj" в узле 2 (целевые объекты Build).
+     1>ClCompile:
+         C:\Program Files (x86)\Visual Studio 2012\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt TestDB.cpp
+         TestDB.cpp
+     1>c:\users\tobar\documents\мгту дз и прочее\программирование\пнаокиш\practice\practice\testdb.cpp(51): warning C4018: <: несоответствие типов со знаком и без знака
+       Link:
+         C:\Program Files (x86)\Visual Studio 2012\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Tobar\Documents\МГТУ ДЗ и прочее\Программирование\ПНАОКИШ\Practice\Debug\Practice.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Tobar\Documents\МГТУ ДЗ и прочее\Программирование\ПНАОКИШ\Practice\Debug\Practice.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Tobar\Documents\МГТУ ДЗ и прочее\Программирование\ПНАОКИШ\Practice\Debug\Practice.lib" /MACHINE:X86 Debug\TestDB.obj
+         dbmsLib_v1.lib
+     1>TestDB.obj : error LNK2019: ссылка на неразрешенный внешний символ "enum DBMSFuncs::TableDataType __cdecl DBMSFuncs::GetType(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,class std::map<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,struct DBMSFuncs::ColumnDesc,struct std::less<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > >,class std::allocator<struct std::pair<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const ,struct DBMSFuncs::ColumnDesc> > >)" (?GetType@DBMSFuncs@@YA?AW4TableDataType@1@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$map@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@UColumnDesc@DBMSFuncs@@U?$less@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@V?$allocator@U?$pair@$$CBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@UColumnDesc@DBMSFuncs@@@std@@@2@@4@@Z) в функции _main
+     1>C:\Users\Tobar\Documents\МГТУ ДЗ и прочее\Программирование\ПНАОКИШ\Practice\Debug\Practice.exe : fatal error LNK1120: неразрешенных внешних элементов: 1
+     1>Построение проекта "C:\Users\Tobar\Documents\МГТУ ДЗ и прочее\Программирование\ПНАОКИШ\Practice\Practice\Practice.vcxproj" завершено (целевые объекты Build) с ошибкой.
+
+Сбой построения.
+
+Затраченное время: 00:00:01.03
