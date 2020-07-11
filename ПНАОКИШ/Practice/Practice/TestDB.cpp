@@ -46,7 +46,7 @@ int main(){
 					DBMSFuncs::Row newRow = tab.CreateRow();
 
 					string primaryKey = tab.GetPrimaryKey();
-					DBMSFuncs::TableDataType type = DBMSFuncs::GetType(primaryKey, tab.GetHeader());
+					DBMSFuncs::TableDataType type = tab.GetHeader()[primaryKey].colType;
 					bool similarKey = false;
 					for (size_t i = 0; i < tab.GetSize(); ++i) {
 						if (comparator(type, tab[i][primaryKey], DBMSFuncs::Equal, newRow[primaryKey])) {
