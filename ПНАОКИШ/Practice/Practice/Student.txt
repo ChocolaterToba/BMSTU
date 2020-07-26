@@ -1,4 +1,5 @@
 Students|StudentID
-Group|String|8|Name|String|16|StudentID|Int32|8
-  IU5-21|          Ivanov|       1
-  IU5-21|          Petrov|       2
+Group|String|8|Name|String|16|Surname|String|50|StudentID|Int32|8|
+  IU5-21|          Михаил|     Ivanov|       1
+  IU5-21|          Sergei|     Petrov|       2
+  IU5-31|            Luka|    Сидоров|       3

@@ -1,16 +1,17 @@
-﻿Построение начато 10.07.2020 20:54:02.
-     1>Проект "C:\Users\Tobar\Documents\МГТУ ДЗ и прочее\Программирование\ПНАОКИШ\Practice\Practice\Practice.vcxproj" в узле 2 (целевые объекты Build).
+﻿Построение начато 26.07.2020 11:15:16.
+     1>Проект "C:\Users\Михаил\Documents\Решения на C++\ПНАОКИШ\Practice\Practice\Practice.vcxproj" в узле 2 (целевые объекты Build).
      1>ClCompile:
-         C:\Program Files (x86)\Visual Studio 2012\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt TestDB.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt TestDB.cpp
          TestDB.cpp
-     1>c:\users\tobar\documents\мгту дз и прочее\программирование\пнаокиш\practice\practice\testdb.cpp(51): warning C4018: <: несоответствие типов со знаком и без знака
        Link:
-         C:\Program Files (x86)\Visual Studio 2012\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Tobar\Documents\МГТУ ДЗ и прочее\Программирование\ПНАОКИШ\Practice\Debug\Practice.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Tobar\Documents\МГТУ ДЗ и прочее\Программирование\ПНАОКИШ\Practice\Debug\Practice.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Tobar\Documents\МГТУ ДЗ и прочее\Программирование\ПНАОКИШ\Practice\Debug\Practice.lib" /MACHINE:X86 Debug\TestDB.obj
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Михаил\Documents\Решения на C++\ПНАОКИШ\Practice\Debug\Practice.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Михаил\Documents\Решения на C++\ПНАОКИШ\Practice\Debug\Practice.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Михаил\Documents\Решения на C++\ПНАОКИШ\Practice\Debug\Practice.lib" /MACHINE:X86 Debug\PrintDBTable.obj
+         Debug\ReadDBTableTxt1.obj
+         Debug\TestDB.obj
+         Debug\WriteDBTableTxt1.obj
          dbmsLib_v1.lib
-     1>dbmsLib_v1.lib(DBMSFuncsLib.obj) : warning LNK4099: "vc110.pdb" PDB не найден с "dbmsLib_v1.lib(DBMSFuncsLib.obj)" или на "C:\Users\Tobar\Documents\МГТУ ДЗ и прочее\Программирование\ПНАОКИШ\Practice\Debug\vc110.pdb"; компоновка объекта выполняется как при отсутствии отладочных данных
-         Practice.vcxproj -> C:\Users\Tobar\Documents\МГТУ ДЗ и прочее\Программирование\ПНАОКИШ\Practice\Debug\Practice.exe
-     1>Построение проекта "C:\Users\Tobar\Documents\МГТУ ДЗ и прочее\Программирование\ПНАОКИШ\Practice\Practice\Practice.vcxproj" завершено (целевые объекты Build).
+         Practice.vcxproj -> C:\Users\Михаил\Documents\Решения на C++\ПНАОКИШ\Practice\Debug\Practice.exe
+     1>Построение проекта "C:\Users\Михаил\Documents\Решения на C++\ПНАОКИШ\Practice\Practice\Practice.vcxproj" завершено (целевые объекты Build).
 
 Построение успешно завершено.
 
-Затраченное время: 00:00:01.42
+Затраченное время: 00:00:04.03

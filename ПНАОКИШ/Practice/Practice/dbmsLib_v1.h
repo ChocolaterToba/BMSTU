@@ -80,8 +80,8 @@ const int LENGTH = 24;//размер полей для имени таблицы и имени столбца.
   TableDataType GetType(string columnName, Header hdr);
   string GetTabNameFromPath(string path);
   string ignoreBlanc(const string str);
-  void* GetValue(string value, string columnName,Header hdr);
-  bool comparator(TableDataType type,void *obj1,Condition condition,void *obj);
+  void* GetValue(string value, string columnName, Header hdr);
+  bool comparator(TableDataType type, void *obj1, Condition condition, void *obj);
   class DBTableTxt;
  // Row CreateRow(DBTableTxt tab);
   //--------------------класс DBTableTxt-----------------------------
@@ -108,7 +108,7 @@ const int LENGTH = 24;//размер полей для имени таблицы и имени столбца.
 		DBTableTxt(){}
 		DBTableTxt(string tabName): tableName(tabName){}
 		~DBTableTxt(){}
- 		string valueToString(Row& row,string columnName);
+ 		string valueToString(Row& row, string columnName);
 		void ReadTableTxt(string tabName);//tabName=path+tableName
 		void ReadTableBin(string tabName);//чтение таблицы из бинарного файла
 		void PrintTable(int screenWidth/*,string dbName*/);
@@ -124,19 +124,19 @@ const int LENGTH = 24;//размер полей для имени таблицы и имени столбца.
 		string GetFileName(){return fileName;}
 		Row CreateRow();
 		void AddRow(Row row);
-		DBTableTxt SelfRows(string columnName,Condition cond, void* value);
+		DBTableTxt SelfRows(string columnName, Condition cond, void* value);
 		//Макет распечатки таблицы:
 		//screenWidth - ширина экрана (входной параметр)
 		//nStrips - число полос в распечатке (выходной параметр)
 		//strips[nStrips] - описание полос таблицы: 
 		//число столбцов и ширина каждого столбца в полосе (выходной параметр)
-		void CreateTableMaket(Strip* &strips,int &nStrips,int screenWidth);
-		friend void WriteDBTableTxt1(DBTableTxt& tab,string fileName);
-		friend void WriteDBTableBin1(DBTableTxt& tab,string fileName);
-		friend void PrintDBTable1(DBTableTxt& tab,int screenSize);
-		friend void ReadDBTableTxt1(DBTableTxt& tab,string fileName);
-		friend void ReadDBTableBin1(DBTableTxt& tab,string fileName); 
-		friend DBTableTxt SelfRows1(DBTableTxt& tab,string columnName,Condition cond, void* value);
+		void CreateTableMaket(Strip*& strips, int& nStrips, int screenWidth);
+		friend void WriteDBTableTxt1(DBTableTxt& tab, string fileName);
+		friend void WriteDBTableBin1(DBTableTxt& tab, string fileName);
+		friend void PrintDBTable1(DBTableTxt& tab, int screenSize);
+		friend void ReadDBTableTxt1(DBTableTxt& tab, string fileName);
+		friend void ReadDBTableBin1(DBTableTxt& tab, string fileName); 
+		friend DBTableTxt SelfRows1(DBTableTxt& tab, string columnName, Condition cond, void* value);
   };
  //-----------------------класс Relation----------------------
   class Relation//описывает связь двух таблиц

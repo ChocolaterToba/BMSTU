@@ -63,12 +63,18 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="dbmsLib_v1.h" />
+    <ClInclude Include="PrintDBTable1.h" />
+    <ClInclude Include="ReadDBTableTxt1.h" />
+    <ClInclude Include="WriteDBTableTxt1.h" />
   </ItemGroup>
   <ItemGroup>
     <Library Include="dbmsLib_v1.lib" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="PrintDBTable.cpp" />
+    <ClCompile Include="ReadDBTableTxt1.cpp" />
     <ClCompile Include="TestDB.cpp" />
+    <ClCompile Include="WriteDBTableTxt1.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -33,22 +33,23 @@ int main(){
 	while(true){
 		switch(menu()){
 		    case 1: 
-				tab.ReadTableTxt("Student");  // I have no idea why we need a string as an argument here, but whatever.
+				ReadDBTableTxt1(tab, "Student.txt");
 				break;
 			case 2:
-				tab.PrintTable(80);
+				PrintDBTable1(tab, 80);
 				break;
 			case 3:
-				tab.WriteTableTxt("Student");
+				WriteDBTableTxt1(tab, "Student.txt");
 				break;
 			case 4:
 				{
 					DBMSFuncs::Row newRow = tab.CreateRow();
 
 					string primaryKey = tab.GetPrimaryKey();
-					DBMSFuncs::TableDataType type = tab.GetHeader()[primaryKey].colType;
-					bool similarKey = false;
-					for (size_t i = 0; i < tab.GetSize(); ++i) {
+					DBMSFuncs::TableDataType type = tab.GetHeader()[primaryKey].colType;  // type is datatype of primary column.
+					bool similarKey = false;  // shows if there's a row with same value in the key column.
+					// Should be size_t but dumbos who made the lib chose to use int.
+					for (int i = 0; i < tab.GetSize(); ++i) {
 						if (comparator(type, tab[i][primaryKey], DBMSFuncs::Equal, newRow[primaryKey])) {
 							cout << "В таблице уже присутствует запись с таким же значением \
 									 первичного ключа. Добавление введённой записи невозможно." << endl;
@@ -63,13 +64,32 @@ int main(){
 				}
 				break;
 			case 5:
+				{
+					cout << "Введите ID студента, которого необходимо перевести:" << endl;
+					int studentID;
+					cin >> studentID;
+					bool studentFound = false;
+					// Should be size_t but dumbos who made the lib chose to use int.
+					for (int i = 0; i < tab.GetSize(); ++i) {
+						if (*(static_cast<int*>(tab[i]["StudentID"])) == studentID) {
+						    cout << "Студент найден. Введите группу, в которую его нужно перевести:" << endl;
+							cin >> *(static_cast<string*>(tab[i]["Group"]));
+							studentFound = true;
+							break;
+						}
+					}
+
+					if (!studentFound) {
+						cout << "Студент не найден." << endl;
+					}
+				}
 				break;
 			case 6: 
 				break;
 			case 7: 
 				break;
 			case 8:
-				cout << *(static_cast<string*>(tab[1]["StudentID"])) << endl;
+				PrintDBTable1(tab, 80);
 				break;
 			case 10:
 				return 0;//завершение работы
