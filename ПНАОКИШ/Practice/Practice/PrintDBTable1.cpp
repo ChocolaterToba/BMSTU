@@ -1,5 +1,5 @@
-#include "PrintDBTable1.h"
-#include "WriteDBTableTxt1.h"
+#include "dbmsLib_v1.h"
+#include "TypeAndStringUtils.h"
 
 void DBMSFuncs::PrintDBTable1(DBMSFuncs::DBTableTxt& tab, int screenSize) {
 	Strip* strips = nullptr;

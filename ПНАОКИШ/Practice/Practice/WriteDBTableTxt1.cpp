@@ -1,6 +1,6 @@
 #include <iomanip>
 #include "dbmsLib_v1.h"
-#include "WriteDBTableTxt1.h"
+#include "TypeAndStringUtils.h"
 
 
 void DBMSFuncs::WriteDBTableTxt1(DBTableTxt& tab, string fileName) {
@@ -24,21 +24,4 @@ void DBMSFuncs::WriteDBTableTxt1(DBTableTxt& tab, string fileName) {
 	    outfile << endl;
 	}
 	outfile.close();
-}
-
-string DBMSFuncs::typeToString(const DBMSFuncs::TableDataType& type) {
-	switch(type) {
-	    case Int32:
-		    return "Int32";
-		case Double:
-			return "Double";
-		case String:
-			return "String";
-		case Date:
-			return "Date";
-		case NoType:
-			return "NoType";
-		default:
-			return "UnknownType";
-	}
 }

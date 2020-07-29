@@ -77,9 +77,9 @@ const int LENGTH = 24;//размер полей для имени таблицы и имени столбца.
   typedef map<string, void*> Row;
   typedef map<string, ColumnDesc> Header;
   enum Condition{Undefined,Equal,NotEqual,Less,Greater,LessOrEqual,GreaterOrEqual};
-  TableDataType GetType(string columnName, Header hdr);
+  TableDataType GetType(string columnName, Header hdr);  //  Не работает, фикс в файле GetTypeFix.cpp.
   string GetTabNameFromPath(string path);
-  string ignoreBlanc(const string str);
+  string ignoreBlanc(const string str);  //  Убирает пробелы из начала строки.
   void* GetValue(string value, string columnName, Header hdr);
   bool comparator(TableDataType type, void *obj1, Condition condition, void *obj);
   class DBTableTxt;
@@ -124,7 +124,7 @@ const int LENGTH = 24;//размер полей для имени таблицы и имени столбца.
 		string GetFileName(){return fileName;}
 		Row CreateRow();
 		void AddRow(Row row);
-		DBTableTxt SelfRows(string columnName, Condition cond, void* value);
+		DBTableTxt SelfRows(string columnName, Condition cond, void* value);  //  Запросы к БД.
 		//Макет распечатки таблицы:
 		//screenWidth - ширина экрана (входной параметр)
 		//nStrips - число полос в распечатке (выходной параметр)

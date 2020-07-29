@@ -46,11 +46,11 @@ int main(){
 					DBMSFuncs::Row newRow = tab.CreateRow();
 
 					string primaryKey = tab.GetPrimaryKey();
-					DBMSFuncs::TableDataType type = tab.GetHeader()[primaryKey].colType;  // type is datatype of primary column.
-					bool similarKey = false;  // shows if there's a row with same value in the key column.
-					// Should be size_t but dumbos who made the lib chose to use int.
+					DBMSFuncs::TableDataType primaryType = tab.GetHeader()[primaryKey].colType;
+					bool similarKey = false;  //  Shows if there's a row with same value in the key column.
+					// "i" should be size_t but dumbos who made the lib chose to use int.
 					for (int i = 0; i < tab.GetSize(); ++i) {
-						if (comparator(type, tab[i][primaryKey], DBMSFuncs::Equal, newRow[primaryKey])) {
+						if (comparator(primaryType, tab[i][primaryKey], DBMSFuncs::Equal, newRow[primaryKey])) {
 							cout << "В таблице уже присутствует запись с таким же значением \
 									 первичного ключа. Добавление введённой записи невозможно." << endl;
 							similarKey = true;
@@ -89,7 +89,7 @@ int main(){
 			case 7: 
 				break;
 			case 8:
-				PrintDBTable1(tab, 80);
+				cout << DBMSFuncs::ignoreBlanc("     This  is a test string \\ | [ ] ") << endl << endl;
 				break;
 			case 10:
 				return 0;//завершение работы
