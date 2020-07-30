@@ -12,7 +12,7 @@ DBMSFuncs::DBTableTxt DBMSFuncs::SelfRows1(DBTableTxt& tab, string columnName, C
 		if (comparator(compType, value, Equal, tab[i][columnName])) {
 			Row newRow;
 			for (const auto & it : tab[i]) {
-				newRow[it.first] = GetValue(tab.valueToString(tab[i], it.first), it.first, tab.GetHeader());  //  Might require fixing.
+				newRow[it.first] = GetValue(tab.valueToString(tab[i], it.first), it.first, tab.GetHeader());
 			}
 			newTab.data.push_back(newRow);
 		}

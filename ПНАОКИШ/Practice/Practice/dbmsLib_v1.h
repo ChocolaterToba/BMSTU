@@ -124,6 +124,7 @@ const int LENGTH = 24;//размер полей для имени таблицы и имени столбца.
 		string GetFileName(){return fileName;}
 		Row CreateRow();
 		void AddRow(Row row);
+		void RemoveRow(int rowIndex);
 		DBTableTxt SelfRows(string columnName, Condition cond, void* value);  //  Запросы к БД.
 		//Макет распечатки таблицы:
 		//screenWidth - ширина экрана (входной параметр)
@@ -166,6 +167,11 @@ const int LENGTH = 24;//размер полей для имени таблицы и имени столбца.
 			Relation GetRelation(string relationName);
 			Row ParentRow(Relation& relation,Row& childRow);
 			DBTableTxt ChildRows(Relation& relation,Row& parentRow);
+
+
+			int GetSize();
+		    void OutputTableNames();  //  DELETE LATER!!!
   };
 }
+
 #endif //_DBMSFuncsLib_

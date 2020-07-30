@@ -15,11 +15,12 @@ void DBMSFuncs::PrintDBTable1(DBMSFuncs::DBTableTxt& tab, int screenSize) {
 		//  Outputting table name.
 		cout << endl;
 		if (!i) {
-			cout << "Таблица " << tab.GetTableName();
+			cout << "Таблица ";
 		} else {
-			cout << "Продолжение таблицы " << tab.GetTableName();
+			cout << "Продолжение таблицы ";
 		}
-		cout << endl << string(screenSize, '=') << endl;
+		cout << tab.GetTableName() << endl
+			 << string(screenSize, '=') << endl;
 
 		//  Outputting columns' headers and types.
 		for (int k = 0; k < strips[i].nField; ++k) {  //  Different columns in header.

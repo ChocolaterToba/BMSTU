@@ -10,8 +10,8 @@ void DBMSFuncs::WriteDBTableTxt1(DBTableTxt& tab, string fileName) {
 	}
 	outfile << tab.tableName << '|' << tab.primaryKey << endl;
 	for (const auto& it : tab.GetHeader()) {
-	    outfile << it.first << '|' << typeToString(it.second.colType)
-			    << '|' << it.second.length << '|';
+	    outfile << it.first << '|' << typeToString(it.second.colType) << '|'
+			    << it.second.length << '|';
 	}
 	outfile.seekp(-1, ios_base::cur);
 	outfile << endl;  //  Replacing '|' with linebreak.
