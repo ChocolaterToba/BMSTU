@@ -1,7 +1,7 @@
 #include "dbmsLib_v1.h"
 #include "TypeAndStringUtils.h"
 
-void DBMSFuncs::ReadDBTableTxt1(DBTableTxt& tab,string fileName) {
+void DBMSFuncs::ReadDBTableTxt1(DBTableTxt& tab, const string& fileName) {
 	tab.data.clear();
 	tab.columnHeaders.clear();
 
@@ -45,7 +45,7 @@ void DBMSFuncs::ReadDBTableTxt1(DBTableTxt& tab,string fileName) {
 	    	for (const string& columnName : columnNames) {
 	    		string valueString;
 	    		splitString(valueString, tableRowString, "|");
-	    		row[columnName] = GetValue(valueString, columnName, tab.columnHeaders);
+	    		row[columnName] = GetValue(ignoreBlanc(valueString), columnName, tab.columnHeaders);
 	    	}
 	    	tab.data.push_back(row);
 		}

@@ -3,7 +3,7 @@
 #include "TypeAndStringUtils.h"
 
 
-void DBMSFuncs::WriteDBTableTxt1(DBTableTxt& tab, string fileName) {
+void DBMSFuncs::WriteDBTableTxt1(DBTableTxt& tab, const string& fileName) {
 	ofstream outfile(fileName, ios_base::out);
 	if (!outfile) {
 		return;

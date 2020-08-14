@@ -1,13 +1,13 @@
 #include <string>
 #include "dbmsLib_v1.h"
 
-DBMSFuncs::TableDataType DBMSFuncs::GetType(string columnName, Header hdr) {
+DBMSFuncs::TableDataType DBMSFuncs::GetType(string& columnName, Header& hdr) {
 	return hdr[columnName].colType;
 }
 
-void DBMSFuncs::DBTableSet::OutputTableNames() {
-	for (const auto & it: db) {
-		cout << it.first << endl;
+void DBMSFuncs::DBTableSet::OutputTables() {
+	for (auto & it: db) {
+		PrintDBTable1(it.second, 80);
 	}
 	cout << "The End." << endl;
 }

@@ -1,7 +1,7 @@
 #include <string>
 #include "dbmsLib_v1.h"
 
-DBMSFuncs::DBTableTxt DBMSFuncs::SelfRows1(DBTableTxt& tab, string columnName, Condition cond, void* value) {
+DBMSFuncs::DBTableTxt DBMSFuncs::SelfRows1(DBTableTxt& tab, string& columnName, Condition cond, void* value) {
 	DBTableTxt newTab;
 	newTab.tableName = tab.tableName;
 	newTab.primaryKey = tab.primaryKey;

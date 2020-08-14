@@ -77,7 +77,7 @@ const int LENGTH = 24;//размер полей для имени таблицы и имени столбца.
   typedef map<string, void*> Row;
   typedef map<string, ColumnDesc> Header;
   enum Condition{Undefined,Equal,NotEqual,Less,Greater,LessOrEqual,GreaterOrEqual};
-  TableDataType GetType(string columnName, Header hdr);  //  Не работает, фикс в файле GetTypeFix.cpp.
+  TableDataType GetType(string& columnName, Header& hdr);  //  Не работает, фикс в файле GetTypeFix.cpp.
   string GetTabNameFromPath(string path);
   string ignoreBlanc(const string str);  //  Убирает пробелы из начала строки.
   void* GetValue(string value, string columnName, Header hdr);
@@ -132,12 +132,12 @@ const int LENGTH = 24;//размер полей для имени таблицы и имени столбца.
 		//strips[nStrips] - описание полос таблицы: 
 		//число столбцов и ширина каждого столбца в полосе (выходной параметр)
 		void CreateTableMaket(Strip*& strips, int& nStrips, int screenWidth);
-		friend void WriteDBTableTxt1(DBTableTxt& tab, string fileName);
-		friend void WriteDBTableBin1(DBTableTxt& tab, string fileName);
-		friend void PrintDBTable1(DBTableTxt& tab, int screenSize);
-		friend void ReadDBTableTxt1(DBTableTxt& tab, string fileName);
-		friend void ReadDBTableBin1(DBTableTxt& tab, string fileName); 
-		friend DBTableTxt SelfRows1(DBTableTxt& tab, string columnName, Condition cond, void* value);
+		friend void WriteDBTableTxt1(DBTableTxt& tab, const string& fileName);
+		friend void WriteDBTableBin1(DBTableTxt& tab, const string& fileName);
+		friend void PrintDBTable1(DBTableTxt& tab, const int screenSize);
+		friend void ReadDBTableTxt1(DBTableTxt& tab, const string& fileName);
+		friend void ReadDBTableBin1(DBTableTxt& tab, const string& fileName); 
+		friend DBTableTxt SelfRows1(DBTableTxt& tab, string& columnName, Condition cond, void* value);
   };
  //-----------------------класс Relation----------------------
   class Relation//описывает связь двух таблиц
@@ -155,11 +155,12 @@ const int LENGTH = 24;//размер полей для имени таблицы и имени столбца.
  {
     private:
 		string dbName;
+		string folderPath;
 	    map<string, DBTableTxt> db;
+		map<string, Relation> relations;
 	public: 
-			DBTableSet(){};
-			DBTableSet(string name);
-			int ReadDB();
+			DBTableSet(const string& dbName = "");
+			void ReadDB(const string& folderPath);
 			void PrintDB(int screenWidth);
 			void WriteDB();
 			string GetDBName(){return dbName;}
@@ -170,7 +171,7 @@ const int LENGTH = 24;//размер полей для имени таблицы и имени столбца.
 
 
 			int GetSize();
-		    void OutputTableNames();  //  DELETE LATER!!!
+		    void OutputTables();  //  DELETE LATER!!!
   };
 }
 

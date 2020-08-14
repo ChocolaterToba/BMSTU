@@ -30,8 +30,10 @@ int menu(){
 int main(){
 	system("chcp 1251>nul");
 	DBMSFuncs::DBTableSet library("Library");
-	cout << library.GetSize() << endl;
-	library.OutputTableNames();
+	library.ReadDB("..\\Library\\");
+	library.OutputTables();
+	system("pause");
+	library.PrintDB(80);
 	system("pause");
 	return 0;
 }

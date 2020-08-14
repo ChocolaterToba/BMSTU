@@ -1,7 +1,7 @@
 #include "dbmsLib_v1.h"
 #include "TypeAndStringUtils.h"
 
-void DBMSFuncs::PrintDBTable1(DBMSFuncs::DBTableTxt& tab, int screenSize) {
+void DBMSFuncs::PrintDBTable1(DBMSFuncs::DBTableTxt& tab, const int screenSize) {
 	Strip* strips = nullptr;
 	int nStrips = 0;
 	tab.CreateTableMaket(strips, nStrips, screenSize);
