@@ -6,6 +6,8 @@
 void DBMSFuncs::WriteDBTableTxt1(DBTableTxt& tab, const string& fileName) {
 	ofstream outfile(fileName, ios_base::out);
 	if (!outfile) {
+		cout << "Не удалось открыть/создать файл " <<  fileName << endl;
+		outfile.close();
 		return;
 	}
 	outfile << tab.tableName << '|' << tab.primaryKey << endl;
@@ -23,5 +25,6 @@ void DBMSFuncs::WriteDBTableTxt1(DBTableTxt& tab, const string& fileName) {
 		outfile.seekp(-1, ios_base::cur);
 	    outfile << endl;
 	}
+
 	outfile.close();
 }

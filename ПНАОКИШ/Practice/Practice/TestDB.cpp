@@ -30,10 +30,12 @@ int menu(){
 int main(){
 	system("chcp 1251>nul");
 	DBMSFuncs::DBTableSet library("Library");
+	library.ReadDB("..\\Library\\");  // 2 backslashes due to '\' being an escape character.
+	library.WriteDB("..\\Library\\");
 	library.ReadDB("..\\Library\\");
-	library.OutputTables();
+	library.PrintDB1(80);
 	system("pause");
-	library.PrintDB(80);
-	system("pause");
+
+	//TODO: Write functions that use DBTableSet to  add students/ababonements/books and do otheher essential/cool stuff.
 	return 0;
 }

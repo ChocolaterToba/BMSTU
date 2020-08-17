@@ -8,24 +8,16 @@ DBMSFuncs::DBTableSet::DBTableSet(const string& dbName) {
 }
 
 void DBMSFuncs::DBTableSet::ReadDB(const string& folderPath) {
-	ifstream dbTableFile(folderPath + "DBTables.txt", ios_base::in);
-	if (!dbTableFile) {
+	ifstream dbTables(folderPath + "DBTables.txt", ios_base::in);
+	if (!dbTables) {
 		cout << "Файл DBTables.txt не найден" << endl;
+		dbTables.close();
 		return;
 	}
-
-	ifstream dbRelationsFile(folderPath + "TableRelations.txt", ios_base::in);
-	if (!dbRelationsFile) {
-		cout << "Файл TableRelations.txt не найден" << endl;
-		return;
-	}
-	dbRelationsFile.close();  //  There might be a better way.
-
-	this->folderPath = folderPath;
 
 	string filenames;
-	getline(dbTableFile, filenames);
-	dbTableFile.close();
+	getline(dbTables, filenames);
+	dbTables.close();
 
 	string filename;
 	while (!filenames.empty()) {
@@ -35,7 +27,7 @@ void DBMSFuncs::DBTableSet::ReadDB(const string& folderPath) {
 		db[tab.GetTableName()] = tab;
 	}
     
-	DBTableTxt relationsTable("Relations");
+	relationsTable = DBTableTxt("Relations");
 	ReadDBTableTxt1(relationsTable, folderPath + "\\TableRelations.txt");
 	for (int i = 0; i < relationsTable.GetSize(); ++i) {
 		Relation relation;
@@ -48,8 +40,46 @@ void DBMSFuncs::DBTableSet::ReadDB(const string& folderPath) {
 	}
 }
 
-void DBMSFuncs::DBTableSet::PrintDB(int screenwidth) {
+void DBMSFuncs::DBTableSet::PrintDB1(const int screenwidth) {
 	for (auto & it : db) {
 		PrintDBTable1(it.second, screenwidth);
 	}
+}
+
+void DBMSFuncs::DBTableSet::WriteDB(const string& folderPath) {
+	ofstream dbTables(folderPath + "DBTables.txt", ios_base::in);
+	if (!dbTables) {
+		cout << "Не удалось открыть/создать файл DBTables.txt" << endl;
+		dbTables.close();
+		return;
+	}
+
+	for (auto & it : db) {
+		dbTables << it.first + ".txt" << '|';
+		WriteDBTableTxt1(it.second, folderPath + it.first + ".txt");
+	}
+	dbTables.seekp(-1, ios_base::cur);
+	dbTables << endl;
+	dbTables.close();
+
+	WriteDBTableTxt1(relationsTable, folderPath + "TableRelations.txt");
+}
+
+DBMSFuncs::Relation DBMSFuncs::DBTableSet::GetRelation1(const string& relationName) {
+	for (auto & it : relations) {
+		if (it.first == relationName) {
+			return it.second;
+		}
+	}
+
+	cout << "Такой связи между таблицами не найдено" << endl;
+	return Relation();
+}
+
+DBMSFuncs::Row DBMSFuncs::DBTableSet::ParentRow1(Relation& relation, Row& childRow) {
+	return SelfRows1(db[relation.parentTable], relation.parentPrimaryKey, Equal, 
+                     childRow[relation.childSecondaryKey])[0];
+}
+DBMSFuncs::DBTableTxt DBMSFuncs::DBTableSet::ChildRows1(Relation& relation,Row& parentRow) {
+	return SelfRows1(db[relation.childTable], relation.childSecondaryKey, Equal, parentRow[relation.parentPrimaryKey]);
 }

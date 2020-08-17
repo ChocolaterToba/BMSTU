@@ -155,23 +155,19 @@ const int LENGTH = 24;//размер полей для имени таблицы и имени столбца.
  {
     private:
 		string dbName;
-		string folderPath;
 	    map<string, DBTableTxt> db;
+		DBTableTxt relationsTable;
 		map<string, Relation> relations;
 	public: 
 			DBTableSet(const string& dbName = "");
 			void ReadDB(const string& folderPath);
-			void PrintDB(int screenWidth);
-			void WriteDB();
+			void PrintDB1(const int screenWidth);
+			void WriteDB(const string& folderPath);
 			string GetDBName(){return dbName;}
 			DBTableTxt& operator[](string tableName) { return db[tableName]; }
-			Relation GetRelation(string relationName);
-			Row ParentRow(Relation& relation,Row& childRow);
-			DBTableTxt ChildRows(Relation& relation,Row& parentRow);
-
-
-			int GetSize();
-		    void OutputTables();  //  DELETE LATER!!!
+			Relation GetRelation1(const string& relationName);
+			Row ParentRow1(Relation& relation,Row& childRow);
+			DBTableTxt ChildRows1(Relation& relation,Row& parentRow);
   };
 }
 

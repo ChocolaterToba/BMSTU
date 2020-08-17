@@ -5,9 +5,10 @@ void DBMSFuncs::ReadDBTableTxt1(DBTableTxt& tab, const string& fileName) {
 	tab.data.clear();
 	tab.columnHeaders.clear();
 
-	tab.fileName = fileName;
+	tab.fileName = fileName;  //  Legacy code, I don't need this in my implementation.
 	ifstream infile(fileName, ios_base::in);
 	if (!infile) {
+		infile.close();
 		return;
 	}
 

@@ -1,5 +1,5 @@
 Students|StudentID
-Group|String|8|Name|String|30|StudentID|Int32|8|
-  IU5-21|  Агличеев Михаил|       1
-  IU5-21|      Иван Иванов|       2
-  IU5-31|      Пётр Петров|       3
+Group|String|8|Name|String|30|StudentID|Int32|8
+  IU5-21|               Агличеев Михаил|       1
+  IU5-21|                   Иван Иванов|       2
+  IU5-31|                   Пётр Петров|       3
