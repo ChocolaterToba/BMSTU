@@ -40,7 +40,7 @@ void DBMSFuncs::DBTableSet::ReadDB(const string& folderPath) {
 	}
 }
 
-void DBMSFuncs::DBTableSet::PrintDB1(const int screenwidth) {
+void DBMSFuncs::DBTableSet::PrintDB(const size_t screenwidth) {
 	for (auto & it : db) {
 		PrintDBTable1(it.second, screenwidth);
 	}
@@ -77,8 +77,8 @@ DBMSFuncs::Relation DBMSFuncs::DBTableSet::GetRelation1(const string& relationNa
 }
 
 DBMSFuncs::Row DBMSFuncs::DBTableSet::ParentRow1(Relation& relation, Row& childRow) {
-	return SelfRows1(db[relation.parentTable], relation.parentPrimaryKey, Equal, 
-                     childRow[relation.childSecondaryKey])[0];
+	return db[relation.parentTable][db[relation.parentTable].FindValue(relation.parentPrimaryKey,
+		                                                               childRow[relation.childSecondaryKey])];
 }
 DBMSFuncs::DBTableTxt DBMSFuncs::DBTableSet::ChildRows1(Relation& relation,Row& parentRow) {
 	return SelfRows1(db[relation.childTable], relation.childSecondaryKey, Equal, parentRow[relation.parentPrimaryKey]);

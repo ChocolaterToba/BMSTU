@@ -1,10 +1,10 @@
-﻿Построение начато 15.08.2020 0:36:58.
+﻿Построение начато 26.08.2020 21:03:57.
      1>Проект "C:\Users\Tobar\Documents\МГТУ ДЗ и прочее\Программирование\ПНАОКИШ\Practice\Practice\Practice.vcxproj" в узле 2 (целевые объекты Build).
      1>ClCompile:
-         C:\Program Files (x86)\Visual Studio 2012\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt DBTableSet.cpp GetTypeFix.cpp PrintDBTable1.cpp ReadDBTableTxt1.cpp RemoveRow.cpp SelfRows1.cpp TypeAndStringUtils.cpp WriteDBTableTxt1.cpp
+         C:\Program Files (x86)\Visual Studio 2012\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt DBTableSet.cpp FindValue.cpp GetTypeFix.cpp PrintDBTable1.cpp ReadDBTableTxt1.cpp RemoveRow.cpp SelfRows1.cpp TypeAndStringUtils.cpp WriteDBTableTxt1.cpp
          DBTableSet.cpp
          Создание кода...
-         Пропуск... (изменения не обнаружены)
+         Компиляция...
          WriteDBTableTxt1.cpp
          TypeAndStringUtils.cpp
          SelfRows1.cpp
@@ -12,8 +12,11 @@
          ReadDBTableTxt1.cpp
          PrintDBTable1.cpp
          GetTypeFix.cpp
+         FindValue.cpp
+         Создание кода...
        Lib:
          C:\Program Files (x86)\Visual Studio 2012\VC\bin\Lib.exe /OUT:"C:\Users\Tobar\Documents\МГТУ ДЗ и прочее\Программирование\ПНАОКИШ\Practice\Debug\Practice.lib" /NOLOGO Debug\DBTableSet.obj
+         Debug\FindValue.obj
          Debug\GetTypeFix.obj
          Debug\PrintDBTable1.obj
          Debug\ReadDBTableTxt1.obj
@@ -27,4 +30,4 @@
 
 Построение успешно завершено.
 
-Затраченное время: 00:00:01.24
+Затраченное время: 00:00:05.51

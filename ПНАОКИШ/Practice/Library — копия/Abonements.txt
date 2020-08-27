@@ -1,0 +1,5 @@
+Abonements|NoPrimaryKey
+BookID|Int32|8|InDate|Date|12|OutDate|Date|12|StudentID|Int32|8
+      23|   25.7.2019|   24.3.2019|       1
+       4|    1.1.2021|   27.6.2020|       3
+       4|    7.9.2020|   14.4.2020|       2

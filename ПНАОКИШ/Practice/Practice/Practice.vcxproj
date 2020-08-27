@@ -70,6 +70,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="DBTableSet.cpp" />
+    <ClCompile Include="FindValue.cpp" />
     <ClCompile Include="GetTypeFix.cpp" />
     <ClCompile Include="PrintDBTable1.cpp" />
     <ClCompile Include="ReadDBTableTxt1.cpp" />

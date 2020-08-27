@@ -9,12 +9,8 @@ DBMSFuncs::DBTableTxt DBMSFuncs::SelfRows1(DBTableTxt& tab, string& columnName, 
 	newTab.columnHeaders = tab.columnHeaders;
 	TableDataType compType = GetType(columnName, tab.GetHeader());
 	for (int i = 0; i < tab.GetSize(); ++i) {
-		if (comparator(compType, value, Equal, tab[i][columnName])) {
-			Row newRow;
-			for (const auto & it : tab[i]) {
-				newRow[it.first] = GetValue(tab.valueToString(tab[i], it.first), it.first, tab.GetHeader());
-			}
-			newTab.data.push_back(newRow);
+		if (comparator(compType, value, cond, tab[i][columnName])) {
+			newTab.AddRow(tab[i]);
 		}
 	}
 	return newTab;
