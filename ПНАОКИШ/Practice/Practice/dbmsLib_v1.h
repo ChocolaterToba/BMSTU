@@ -116,7 +116,7 @@ const int LENGTH = 24;  //  Размер полей для имени таблицы и имени столбца.
         DBTableTxt(string tabName): tableName(tabName){}
         ~DBTableTxt(){}
 
-         string valueToString(Row& row, string columnName);
+        string valueToString(Row& row, string columnName);
 
         void ReadTableTxt(string tabName);  //  tabName=path+tableName
         void ReadTableBin(string tabName);  //  Чтение таблицы из бинарного файла
@@ -137,6 +137,7 @@ const int LENGTH = 24;  //  Размер полей для имени таблицы и имени столбца.
         Row CreateRow();
         void AddRow(Row row);  //  При добавлении строки копируются не ссылки, а сами значения.
         void RemoveRow(int rowIndex);
+		void EditRow(int rowIndex, const string& columnName, string& value);  //  Замена значения с индексами [rowIndex][columnName].
 		int FindValue(const string& columnName, void* value);  //  Нахождение самой первой строчки с нужным значением столбца.
 		int FindValue(const string& columnName, const string& value);  //  Использовать строку зачастую удобнее.
 		int FindValue(const string& columnName, void* value, const string& columnName2, void* value2);  //  Поиск по 2 столбцам за раз.

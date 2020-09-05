@@ -74,7 +74,7 @@
     <ClCompile Include="GetTypeFix.cpp" />
     <ClCompile Include="PrintDBTable1.cpp" />
     <ClCompile Include="ReadDBTableTxt1.cpp" />
-    <ClCompile Include="RemoveRow.cpp" />
+    <ClCompile Include="RowOperations.cpp" />
     <ClCompile Include="SelfRows1.cpp" />
     <ClCompile Include="TypeAndStringUtils.cpp" />
     <ClCompile Include="WriteDBTableTxt1.cpp" />
