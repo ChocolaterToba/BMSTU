@@ -6,9 +6,19 @@ using namespace std;
 
 const size_t SCREENSIZE = 80;
 
-template <typename T>
-T ChoiceGetter(const string& foreword = "Выберите действие") {
-	T choice;
+template <typename T> T ChoiceGetter(const string& foreword = "Выберите действие");
+template <> string ChoiceGetter(const string& foreword) {
+	string choice;
+	cout << foreword << ":" << endl;
+	if (cin.peek() == '\n') {
+		cin.ignore();  //  Skipping linebreak added during input
+	}
+    getline(cin, choice);
+	return choice;
+}
+
+template <> int ChoiceGetter(const string& foreword) {
+	int choice;
 	cout << foreword << ":" << endl;
     cin >> choice;
     while (cin.fail()) {
@@ -178,8 +188,8 @@ int main(){
 
 						switch(StudentEditingMenu()) {
 						    case 1: {
-								string studentName = ChoiceGetter <string> ("Введите новое имя");
-								library["Students"].EditRow(index, "StudentName", studentName);
+								string name = ChoiceGetter <string> ("Введите новое имя");
+								library["Students"].EditRow(index, "Name", name);
 								break;
 							}
 							case 2: {
@@ -256,7 +266,7 @@ int main(){
 						switch(AbonementEditingMenu()) {
 							case 1: {
 								string dueDate = ChoiceGetter <string> ("Введите новую дату возврата");
-								if (DBMSFuncs::comparator(DBMSFuncs::Int32, library["Abonements"][index]["InDate"], DBMSFuncs::LessOrEqual,
+								if (DBMSFuncs::comparator(DBMSFuncs::Int32, library["Abonements"][index]["TakenDate"], DBMSFuncs::LessOrEqual,
 										                  DBMSFuncs::GetValue(dueDate, "DueDate", library["Abonements"].GetHeader()))) {
 									library["Abonements"].EditRow(index, "DueDate", dueDate);
 								} else {
@@ -266,7 +276,7 @@ int main(){
 							}
 							case 2: {
 								string takenDate = ChoiceGetter <string> ("Введите новую дату выдачи");
-								if (DBMSFuncs::comparator(DBMSFuncs::Int32, library["Abonements"][index]["OutDate"], DBMSFuncs::GreaterOrEqual,
+								if (DBMSFuncs::comparator(DBMSFuncs::Int32, library["Abonements"][index]["DueDate"], DBMSFuncs::GreaterOrEqual,
 										                  DBMSFuncs::GetValue(takenDate, "TakenDate", library["Abonements"].GetHeader()))) {
 									library["Abonements"].EditRow(index, "TakenDate", takenDate);
 								} else {
@@ -360,12 +370,13 @@ int main(){
 				}	
 				break;
             case 7: {
-                cout << DBMSFuncs::GetTabNameFromPath("../Library/Books.txt");
+                library.ReadDB("..\\library\\");
                 break;
                 }
             case 10:
                 return 0;
         }
+		cout << endl;
     }
     system("pause");
     return 0;
