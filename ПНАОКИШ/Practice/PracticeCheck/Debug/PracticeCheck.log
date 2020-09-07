@@ -1,4 +1,4 @@
-﻿Построение начато 05.09.2020 21:36:02.
+﻿Построение начато 07.09.2020 15:48:24.
      1>Проект "C:\Users\Михаил\Documents\Решения на C++\ПНАОКИШ\Practice\PracticeCheck\PracticeCheck.vcxproj" в узле 2 (целевые объекты Build).
      1>Link:
          C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Михаил\Documents\Решения на C++\ПНАОКИШ\Practice\Debug\PracticeCheck.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Михаил\Documents\Решения на C++\ПНАОКИШ\Practice\Debug\PracticeCheck.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Михаил\Documents\Решения на C++\ПНАОКИШ\Practice\Debug\PracticeCheck.lib" /MACHINE:X86 Debug\TestDB.obj
@@ -9,4 +9,4 @@
 
 Построение успешно завершено.
 
-Затраченное время: 00:00:02.90
+Затраченное время: 00:00:02.95

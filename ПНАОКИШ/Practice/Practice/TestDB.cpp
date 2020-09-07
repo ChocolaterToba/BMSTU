@@ -38,7 +38,7 @@ int MainMenu() {
     cout << "4 - Добавление записи в таблицу" << endl;
 	cout << "5 - Изменение записи в таблице (Перевод студента в другую группу, продление абонементов)" << endl;
     cout << "6 - Удаление записи из таблицы (по значению в ключевом столбце)" << endl;
-    cout << "7 - Тестирование" << endl;  //  DELETE
+    cout << "7 - Вывод всех книг, выданных студенту" << endl;
     cout << "10 - Выход" << endl;
 
 	return ChoiceGetter <int> ();
@@ -370,7 +370,20 @@ int main(){
 				}	
 				break;
             case 7: {
-                library.ReadDB("..\\library\\");
+				DBMSFuncs::PrintDBTable1(library["Students"], SCREENSIZE);
+				string studentID = ChoiceGetter <string> ("Введите ID нужного студента");
+				int index = library["Students"].FindValue("StudentID", studentID);
+				if (index == -1) {
+					cout << "Такого студента не найдено" << endl;
+					break;
+				}
+				DBMSFuncs::DBTableTxt abonements = library.ChildRows1(library.GetRelation1("StudentsRelations"), library["Students"][index]);
+				if (abonements.GetSize() == 0) {
+				    cout << "На этого студента не выписано никаких книг" << endl;
+					break;
+				}
+
+				DBMSFuncs::PrintDBTable1(abonements, SCREENSIZE);
                 break;
                 }
             case 10:

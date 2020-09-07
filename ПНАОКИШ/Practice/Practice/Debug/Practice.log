@@ -1,8 +1,8 @@
-﻿Построение начато 05.09.2020 21:35:58.
+﻿Построение начато 07.09.2020 15:48:20.
      1>Проект "C:\Users\Михаил\Documents\Решения на C++\ПНАОКИШ\Practice\Practice\Practice.vcxproj" в узле 2 (целевые объекты Build).
      1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt RowOperations.cpp
-         RowOperations.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt DBTableSet.cpp
+         DBTableSet.cpp
        Lib:
          C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\Lib.exe /OUT:"C:\Users\Михаил\Documents\Решения на C++\ПНАОКИШ\Practice\Debug\Practice.lib" /NOLOGO Debug\DBTableSet.obj
          Debug\FindValue.obj
@@ -19,4 +19,4 @@
 
 Построение успешно завершено.
 
-Затраченное время: 00:00:03.89
+Затраченное время: 00:00:04.37

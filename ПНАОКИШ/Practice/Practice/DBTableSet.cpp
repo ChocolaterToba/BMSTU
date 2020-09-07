@@ -31,11 +31,11 @@ void DBMSFuncs::DBTableSet::ReadDB(const string& folderPath) {
 	ReadDBTableTxt1(relationsTable, folderPath + "\\TableRelations.txt");
 	for (int i = 0; i < relationsTable.GetSize(); ++i) {
 		Relation relation;
-		relation.relationName = relationsTable.valueToString(relationsTable[i], "RelationName");
-		relation.childSecondaryKey= relationsTable.valueToString(relationsTable[i], "ChildSecondaryKey");
-		relation.childTable= relationsTable.valueToString(relationsTable[i], "ChildTable");
-		relation.parentPrimaryKey = relationsTable.valueToString(relationsTable[i], "ParentPrimaryKey");
-		relation.parentTable = relationsTable.valueToString(relationsTable[i], "ParentTable");
+		relation.relationName = ignoreBlanc(relationsTable.valueToString(relationsTable[i], "RelationName"));
+		relation.childSecondaryKey= ignoreBlanc(relationsTable.valueToString(relationsTable[i], "ChildSecondaryKey"));
+		relation.childTable= ignoreBlanc(relationsTable.valueToString(relationsTable[i], "ChildTable"));
+		relation.parentPrimaryKey = ignoreBlanc(relationsTable.valueToString(relationsTable[i], "ParentPrimaryKey"));
+		relation.parentTable = ignoreBlanc(relationsTable.valueToString(relationsTable[i], "ParentTable"));
 		relations[relation.relationName] = relation;
 	}
 }
