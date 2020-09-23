@@ -1,0 +1,13 @@
+C:\Users\Михаил\Documents\МГТУ ДЗ и прочее\Программирование\БКИТ\Лабораторная № 2\Лабораторная № 2\bin\Debug\netcoreapp3.1\Лабораторная № 2.exe
+C:\Users\Михаил\Documents\МГТУ ДЗ и прочее\Программирование\БКИТ\Лабораторная № 2\Лабораторная № 2\bin\Debug\netcoreapp3.1\Лабораторная № 2.deps.json
+C:\Users\Михаил\Documents\МГТУ ДЗ и прочее\Программирование\БКИТ\Лабораторная № 2\Лабораторная № 2\bin\Debug\netcoreapp3.1\Лабораторная № 2.runtimeconfig.json
+C:\Users\Михаил\Documents\МГТУ ДЗ и прочее\Программирование\БКИТ\Лабораторная № 2\Лабораторная № 2\bin\Debug\netcoreapp3.1\Лабораторная № 2.runtimeconfig.dev.json
+C:\Users\Михаил\Documents\МГТУ ДЗ и прочее\Программирование\БКИТ\Лабораторная № 2\Лабораторная № 2\bin\Debug\netcoreapp3.1\Лабораторная № 2.dll
+C:\Users\Михаил\Documents\МГТУ ДЗ и прочее\Программирование\БКИТ\Лабораторная № 2\Лабораторная № 2\bin\Debug\netcoreapp3.1\Лабораторная № 2.pdb
+C:\Users\Михаил\Documents\МГТУ ДЗ и прочее\Программирование\БКИТ\Лабораторная № 2\Лабораторная № 2\obj\Debug\netcoreapp3.1\Лабораторная № 2.csprojAssemblyReference.cache
+C:\Users\Михаил\Documents\МГТУ ДЗ и прочее\Программирование\БКИТ\Лабораторная № 2\Лабораторная № 2\obj\Debug\netcoreapp3.1\Лабораторная № 2.AssemblyInfoInputs.cache
+C:\Users\Михаил\Documents\МГТУ ДЗ и прочее\Программирование\БКИТ\Лабораторная № 2\Лабораторная № 2\obj\Debug\netcoreapp3.1\Лабораторная № 2.AssemblyInfo.cs
+C:\Users\Михаил\Documents\МГТУ ДЗ и прочее\Программирование\БКИТ\Лабораторная № 2\Лабораторная № 2\obj\Debug\netcoreapp3.1\Лабораторная № 2.csproj.CoreCompileInputs.cache
+C:\Users\Михаил\Documents\МГТУ ДЗ и прочее\Программирование\БКИТ\Лабораторная № 2\Лабораторная № 2\obj\Debug\netcoreapp3.1\Лабораторная № 2.dll
+C:\Users\Михаил\Documents\МГТУ ДЗ и прочее\Программирование\БКИТ\Лабораторная № 2\Лабораторная № 2\obj\Debug\netcoreapp3.1\Лабораторная № 2.pdb
+C:\Users\Михаил\Documents\МГТУ ДЗ и прочее\Программирование\БКИТ\Лабораторная № 2\Лабораторная № 2\obj\Debug\netcoreapp3.1\Лабораторная № 2.genruntimeconfig.cache

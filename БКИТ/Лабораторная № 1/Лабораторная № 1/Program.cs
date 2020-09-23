@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+//using static System.Math;
 
 namespace Лабораторная___1
 {
@@ -9,8 +10,10 @@ namespace Лабораторная___1
         {
             Console.WriteLine("Aglicheev Mikhail Sergeevich, IU5-31B");
             Console.WriteLine("Quadratic equation: A * x ^ 4 + B * x ^ 2 + C = 0");
-            string coefficient;
+ 
+            string coefficient;  //  Temporary variable for storing input.
             double[] coefficients = new double[3];
+
             switch(args.Length)
             {
                 case 0:
@@ -19,7 +22,7 @@ namespace Лабораторная___1
                     {
                         while (true)
                         {
-                            Console.Write($"Please input {coefficientsNames[i]} coefficient:");
+                            Console.Write($"Please input coefficient {coefficientsNames[i]}:");
                             coefficient = Console.ReadLine();
                             if (double.TryParse(coefficient, out coefficients[i]))
                             {
@@ -29,12 +32,12 @@ namespace Лабораторная___1
                                 }
                                 else
                                 {
-                                    Console.WriteLine("A coefficient cannot be 0. Please try again.");
+                                    Console.WriteLine("First coefficient ('A') cannot be 0. Please try again.");
                                 }
                             }
                             else
                             {
-                                Console.WriteLine("Input Failed. Please try again.");
+                                Console.WriteLine("That's not a number. Please try again.");
                             }
                         }
                     }
@@ -65,7 +68,7 @@ namespace Лабораторная___1
                     break;
                 default:
                     Console.ForegroundColor = ConsoleColor.Red;
-                    Console.WriteLine("There's not enough coefficients passed as arguments");
+                    Console.WriteLine($"This function need 3 arguments. You passed {args.Length}.");
                     Console.ForegroundColor = ConsoleColor.Black;
                     Console.ReadKey();
                     return;
@@ -98,7 +101,7 @@ namespace Лабораторная___1
                 Console.ForegroundColor = ConsoleColor.Green;
                 Console.WriteLine($"{roots.Count} Root{(roots.Count > 1 ? "s" : "")} found:");
                 foreach (double root in roots) {
-                    Console.Write("{0} ", root);
+                    Console.Write($"{root} ");
                 }
                 Console.WriteLine();
             }
