@@ -7,14 +7,27 @@
   "targets": {
     ".NETCoreApp,Version=v3.1": {
       "Лабораторная № 3/1.0.0": {
+        "dependencies": {
+          "SimpleListProject": "1.0.0"
+        },
         "runtime": {
           "Лабораторная № 3.dll": {}
+        }
+      },
+      "SimpleListProject/1.0.0": {
+        "runtime": {
+          "SimpleListProject.dll": {}
         }
       }
     }
   },
   "libraries": {
     "Лабораторная № 3/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "SimpleListProject/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

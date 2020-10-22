@@ -1,11 +1,30 @@
 {
   "version": 3,
   "targets": {
-    ".NETCoreApp,Version=v3.1": {}
+    ".NETCoreApp,Version=v3.1": {
+      "SimpleListProject/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "compile": {
+          "bin/placeholder/SimpleListProject.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/SimpleListProject.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "SimpleListProject/1.0.0": {
+      "type": "project",
+      "path": "../SimpleList/SimpleListProject.csproj",
+      "msbuildProject": "../SimpleList/SimpleListProject.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    ".NETCoreApp,Version=v3.1": []
+    ".NETCoreApp,Version=v3.1": [
+      "SimpleListProject >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\Михаил\\.nuget\\packages\\": {}
@@ -32,7 +51,11 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\Михаил\\Documents\\МГТУ ДЗ и прочее\\Программирование\\БКИТ\\Лабораторная № 3\\SimpleList\\SimpleListProject.csproj": {
+              "projectPath": "C:\\Users\\Михаил\\Documents\\МГТУ ДЗ и прочее\\Программирование\\БКИТ\\Лабораторная № 3\\SimpleList\\SimpleListProject.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

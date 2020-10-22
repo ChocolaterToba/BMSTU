@@ -1,0 +1,9 @@
+C:\Users\Михаил\Documents\МГТУ ДЗ и прочее\Программирование\БКИТ\Лабораторная № 3\SimpleList\bin\Debug\netstandard2.0\SimpleListProject.deps.json
+C:\Users\Михаил\Documents\МГТУ ДЗ и прочее\Программирование\БКИТ\Лабораторная № 3\SimpleList\bin\Debug\netstandard2.0\SimpleListProject.dll
+C:\Users\Михаил\Documents\МГТУ ДЗ и прочее\Программирование\БКИТ\Лабораторная № 3\SimpleList\bin\Debug\netstandard2.0\SimpleListProject.pdb
+C:\Users\Михаил\Documents\МГТУ ДЗ и прочее\Программирование\БКИТ\Лабораторная № 3\SimpleList\obj\Debug\netstandard2.0\SimpleListProject.csprojAssemblyReference.cache
+C:\Users\Михаил\Documents\МГТУ ДЗ и прочее\Программирование\БКИТ\Лабораторная № 3\SimpleList\obj\Debug\netstandard2.0\SimpleListProject.AssemblyInfoInputs.cache
+C:\Users\Михаил\Documents\МГТУ ДЗ и прочее\Программирование\БКИТ\Лабораторная № 3\SimpleList\obj\Debug\netstandard2.0\SimpleListProject.AssemblyInfo.cs
+C:\Users\Михаил\Documents\МГТУ ДЗ и прочее\Программирование\БКИТ\Лабораторная № 3\SimpleList\obj\Debug\netstandard2.0\SimpleListProject.csproj.CoreCompileInputs.cache
+C:\Users\Михаил\Documents\МГТУ ДЗ и прочее\Программирование\БКИТ\Лабораторная № 3\SimpleList\obj\Debug\netstandard2.0\SimpleListProject.dll
+C:\Users\Михаил\Documents\МГТУ ДЗ и прочее\Программирование\БКИТ\Лабораторная № 3\SimpleList\obj\Debug\netstandard2.0\SimpleListProject.pdb

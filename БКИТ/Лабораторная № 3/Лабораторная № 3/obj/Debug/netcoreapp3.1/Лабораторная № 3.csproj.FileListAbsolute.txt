@@ -11,3 +11,6 @@ C:\Users\Михаил\Documents\МГТУ ДЗ и прочее\Программи
 C:\Users\Михаил\Documents\МГТУ ДЗ и прочее\Программирование\БКИТ\Лабораторная № 3\Лабораторная № 3\obj\Debug\netcoreapp3.1\Лабораторная № 3.pdb
 C:\Users\Михаил\Documents\МГТУ ДЗ и прочее\Программирование\БКИТ\Лабораторная № 3\Лабораторная № 3\obj\Debug\netcoreapp3.1\Лабораторная № 3.genruntimeconfig.cache
 C:\Users\Михаил\Documents\МГТУ ДЗ и прочее\Программирование\БКИТ\Лабораторная № 3\Лабораторная № 3\obj\Debug\netcoreapp3.1\Лабораторная № 3.csprojAssemblyReference.cache
+C:\Users\Михаил\Documents\МГТУ ДЗ и прочее\Программирование\БКИТ\Лабораторная № 3\Лабораторная № 3\bin\Debug\netcoreapp3.1\SimpleListProject.dll
+C:\Users\Михаил\Documents\МГТУ ДЗ и прочее\Программирование\БКИТ\Лабораторная № 3\Лабораторная № 3\bin\Debug\netcoreapp3.1\SimpleListProject.pdb
+C:\Users\Михаил\Documents\МГТУ ДЗ и прочее\Программирование\БКИТ\Лабораторная № 3\Лабораторная № 3\obj\Debug\netcoreapp3.1\Лабораторная № 3.csproj.CopyComplete
