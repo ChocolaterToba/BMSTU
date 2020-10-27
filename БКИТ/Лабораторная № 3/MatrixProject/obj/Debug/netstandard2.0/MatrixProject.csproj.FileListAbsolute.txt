@@ -1,0 +1,14 @@
+C:\Users\Михаил\Documents\МГТУ ДЗ и прочее\Программирование\БКИТ\Лабораторная № 3\MatrixProject\bin\Debug\netstandard2.0\MatrixProject.deps.json
+C:\Users\Михаил\Documents\МГТУ ДЗ и прочее\Программирование\БКИТ\Лабораторная № 3\MatrixProject\bin\Debug\netstandard2.0\MatrixProject.dll
+C:\Users\Михаил\Documents\МГТУ ДЗ и прочее\Программирование\БКИТ\Лабораторная № 3\MatrixProject\bin\Debug\netstandard2.0\MatrixProject.pdb
+C:\Users\Михаил\Documents\МГТУ ДЗ и прочее\Программирование\БКИТ\Лабораторная № 3\MatrixProject\bin\Debug\netstandard2.0\FigureProject.dll
+C:\Users\Михаил\Documents\МГТУ ДЗ и прочее\Программирование\БКИТ\Лабораторная № 3\MatrixProject\bin\Debug\netstandard2.0\SimpleListProject.dll
+C:\Users\Михаил\Documents\МГТУ ДЗ и прочее\Программирование\БКИТ\Лабораторная № 3\MatrixProject\bin\Debug\netstandard2.0\FigureProject.pdb
+C:\Users\Михаил\Documents\МГТУ ДЗ и прочее\Программирование\БКИТ\Лабораторная № 3\MatrixProject\bin\Debug\netstandard2.0\SimpleListProject.pdb
+C:\Users\Михаил\Documents\МГТУ ДЗ и прочее\Программирование\БКИТ\Лабораторная № 3\MatrixProject\obj\Debug\netstandard2.0\MatrixProject.csprojAssemblyReference.cache
+C:\Users\Михаил\Documents\МГТУ ДЗ и прочее\Программирование\БКИТ\Лабораторная № 3\MatrixProject\obj\Debug\netstandard2.0\MatrixProject.AssemblyInfoInputs.cache
+C:\Users\Михаил\Documents\МГТУ ДЗ и прочее\Программирование\БКИТ\Лабораторная № 3\MatrixProject\obj\Debug\netstandard2.0\MatrixProject.AssemblyInfo.cs
+C:\Users\Михаил\Documents\МГТУ ДЗ и прочее\Программирование\БКИТ\Лабораторная № 3\MatrixProject\obj\Debug\netstandard2.0\MatrixProject.csproj.CoreCompileInputs.cache
+C:\Users\Михаил\Documents\МГТУ ДЗ и прочее\Программирование\БКИТ\Лабораторная № 3\MatrixProject\obj\Debug\netstandard2.0\MatrixProject.csproj.CopyComplete
+C:\Users\Михаил\Documents\МГТУ ДЗ и прочее\Программирование\БКИТ\Лабораторная № 3\MatrixProject\obj\Debug\netstandard2.0\MatrixProject.dll
+C:\Users\Михаил\Documents\МГТУ ДЗ и прочее\Программирование\БКИТ\Лабораторная № 3\MatrixProject\obj\Debug\netstandard2.0\MatrixProject.pdb

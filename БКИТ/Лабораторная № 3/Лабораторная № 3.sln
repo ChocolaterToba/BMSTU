@@ -5,7 +5,11 @@ VisualStudioVersion = 16.0.30503.244
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Лабораторная № 3", "Лабораторная № 3\Лабораторная № 3.csproj", "{58891425-EDA6-4044-A3FD-476167FBAFA0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleListProject", "SimpleList\SimpleListProject.csproj", "{08F6F49A-0FC4-40BB-937B-49BC721F1A72}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SimpleListProject", "SimpleList\SimpleListProject.csproj", "{08F6F49A-0FC4-40BB-937B-49BC721F1A72}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MatrixProject", "MatrixProject\MatrixProject.csproj", "{E8D609AC-5A87-4C65-86FC-0398B0295FA4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FigureProject", "FigureProject\FigureProject.csproj", "{37EBA605-396C-4F59-B329-84BC0682BFAF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +25,14 @@ Global
 		{08F6F49A-0FC4-40BB-937B-49BC721F1A72}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{08F6F49A-0FC4-40BB-937B-49BC721F1A72}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{08F6F49A-0FC4-40BB-937B-49BC721F1A72}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E8D609AC-5A87-4C65-86FC-0398B0295FA4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E8D609AC-5A87-4C65-86FC-0398B0295FA4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E8D609AC-5A87-4C65-86FC-0398B0295FA4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E8D609AC-5A87-4C65-86FC-0398B0295FA4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{37EBA605-396C-4F59-B329-84BC0682BFAF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{37EBA605-396C-4F59-B329-84BC0682BFAF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{37EBA605-396C-4F59-B329-84BC0682BFAF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{37EBA605-396C-4F59-B329-84BC0682BFAF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,0 +1,9 @@
+C:\Users\Михаил\Documents\МГТУ ДЗ и прочее\Программирование\БКИТ\Лабораторная № 3\FigureProject\bin\Debug\netstandard2.0\FigureProject.deps.json
+C:\Users\Михаил\Documents\МГТУ ДЗ и прочее\Программирование\БКИТ\Лабораторная № 3\FigureProject\bin\Debug\netstandard2.0\FigureProject.dll
+C:\Users\Михаил\Documents\МГТУ ДЗ и прочее\Программирование\БКИТ\Лабораторная № 3\FigureProject\bin\Debug\netstandard2.0\FigureProject.pdb
+C:\Users\Михаил\Documents\МГТУ ДЗ и прочее\Программирование\БКИТ\Лабораторная № 3\FigureProject\obj\Debug\netstandard2.0\FigureProject.csprojAssemblyReference.cache
+C:\Users\Михаил\Documents\МГТУ ДЗ и прочее\Программирование\БКИТ\Лабораторная № 3\FigureProject\obj\Debug\netstandard2.0\FigureProject.AssemblyInfoInputs.cache
+C:\Users\Михаил\Documents\МГТУ ДЗ и прочее\Программирование\БКИТ\Лабораторная № 3\FigureProject\obj\Debug\netstandard2.0\FigureProject.AssemblyInfo.cs
+C:\Users\Михаил\Documents\МГТУ ДЗ и прочее\Программирование\БКИТ\Лабораторная № 3\FigureProject\obj\Debug\netstandard2.0\FigureProject.csproj.CoreCompileInputs.cache
+C:\Users\Михаил\Documents\МГТУ ДЗ и прочее\Программирование\БКИТ\Лабораторная № 3\FigureProject\obj\Debug\netstandard2.0\FigureProject.dll
+C:\Users\Михаил\Documents\МГТУ ДЗ и прочее\Программирование\БКИТ\Лабораторная № 3\FigureProject\obj\Debug\netstandard2.0\FigureProject.pdb

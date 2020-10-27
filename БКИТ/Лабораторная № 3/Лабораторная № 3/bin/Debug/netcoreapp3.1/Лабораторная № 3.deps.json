@@ -8,10 +8,26 @@
     ".NETCoreApp,Version=v3.1": {
       "Лабораторная № 3/1.0.0": {
         "dependencies": {
+          "FigureProject": "1.0.0",
+          "MatrixProject": "1.0.0",
           "SimpleListProject": "1.0.0"
         },
         "runtime": {
           "Лабораторная № 3.dll": {}
+        }
+      },
+      "FigureProject/1.0.0": {
+        "runtime": {
+          "FigureProject.dll": {}
+        }
+      },
+      "MatrixProject/1.0.0": {
+        "dependencies": {
+          "FigureProject": "1.0.0",
+          "SimpleListProject": "1.0.0"
+        },
+        "runtime": {
+          "MatrixProject.dll": {}
         }
       },
       "SimpleListProject/1.0.0": {
@@ -23,6 +39,16 @@
   },
   "libraries": {
     "Лабораторная № 3/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "FigureProject/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "MatrixProject/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

@@ -1,14 +1,11 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <OutputType>Exe</OutputType>
-    <TargetFramework>netcoreapp3.1</TargetFramework>
-    <RootNamespace>Лабораторная___3</RootNamespace>
+    <TargetFramework>netstandard2.0</TargetFramework>
   </PropertyGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\FigureProject\FigureProject.csproj" />
-    <ProjectReference Include="..\MatrixProject\MatrixProject.csproj" />
     <ProjectReference Include="..\SimpleList\SimpleListProject.csproj" />
   </ItemGroup>
 
