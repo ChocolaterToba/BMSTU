@@ -26,7 +26,7 @@ namespace Лабораторная___1
                             coefficient = Console.ReadLine();
                             if (double.TryParse(coefficient, out coefficients[i]))
                             {
-                                if (i != 0 || coefficient[i] != 0)
+                                if (i != 0 || coefficients[i] != 0)
                                 {
                                     break;
                                 }
@@ -68,7 +68,7 @@ namespace Лабораторная___1
                     break;
                 default:
                     Console.ForegroundColor = ConsoleColor.Red;
-                    Console.WriteLine($"This function need 3 arguments. You passed {args.Length}.");
+                    Console.WriteLine($"This function needs 3 arguments. You passed {args.Length}.");
                     Console.ForegroundColor = ConsoleColor.Black;
                     Console.ReadKey();
                     return;
