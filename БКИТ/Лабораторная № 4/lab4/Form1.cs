@@ -10,6 +10,7 @@ using System.Windows.Forms;
 
 using System.IO;
 using System.Diagnostics;
+using static Лабораторная___5.Distance;
 
 namespace lab4
 {
@@ -51,6 +52,7 @@ namespace lab4
         private void buttonFindWord_Click(object sender, EventArgs e)
         {
             labelSearchTime.Text = "Word not found!";
+            LabelDistance.Text = "Levenstain distance:";
 
             string wordToFind = textBoxWordSearch.Text;
 
@@ -58,12 +60,14 @@ namespace lab4
             {
                 if (!listBoxFoundWords.Items.Contains(wordToFind))
                 {
+                    int maxDistance = (int) maxDistanceInput.Value;
                     Stopwatch stopwatch = new Stopwatch();
                     stopwatch.Start();
 
                     foreach (string word in _words)
                     {
-                        if (word.Contains(wordToFind))
+                        int currentDistance = Levenshtain(word, wordToFind);
+                        if (currentDistance <= maxDistance)  // Checking if Levenstain distance is too big
                         {
                             listBoxFoundWords.BeginUpdate();
                             listBoxFoundWords.Items.Add(wordToFind);
@@ -71,6 +75,8 @@ namespace lab4
 
                             stopwatch.Stop();
                             labelSearchTime.Text = String.Format("Time taken to find word: {0:0.00} ms", stopwatch.Elapsed.Milliseconds);
+
+                            LabelDistance.Text = String.Format("Levenstain distance: {0}", currentDistance);
                             break;
                         }
                     }
