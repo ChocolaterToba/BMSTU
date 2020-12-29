@@ -1,0 +1,9 @@
+C:\Users\Tobar\Documents\МГТУ ДЗ и прочее\Программирование\БКИТ\Лабораторная № 5\Лабораторная № 5\bin\Debug\netstandard2.0\Distance.deps.json
+C:\Users\Tobar\Documents\МГТУ ДЗ и прочее\Программирование\БКИТ\Лабораторная № 5\Лабораторная № 5\bin\Debug\netstandard2.0\Distance.dll
+C:\Users\Tobar\Documents\МГТУ ДЗ и прочее\Программирование\БКИТ\Лабораторная № 5\Лабораторная № 5\bin\Debug\netstandard2.0\Distance.pdb
+C:\Users\Tobar\Documents\МГТУ ДЗ и прочее\Программирование\БКИТ\Лабораторная № 5\Лабораторная № 5\obj\Debug\netstandard2.0\Distance.csprojAssemblyReference.cache
+C:\Users\Tobar\Documents\МГТУ ДЗ и прочее\Программирование\БКИТ\Лабораторная № 5\Лабораторная № 5\obj\Debug\netstandard2.0\Distance.AssemblyInfoInputs.cache
+C:\Users\Tobar\Documents\МГТУ ДЗ и прочее\Программирование\БКИТ\Лабораторная № 5\Лабораторная № 5\obj\Debug\netstandard2.0\Distance.AssemblyInfo.cs
+C:\Users\Tobar\Documents\МГТУ ДЗ и прочее\Программирование\БКИТ\Лабораторная № 5\Лабораторная № 5\obj\Debug\netstandard2.0\Distance.csproj.CoreCompileInputs.cache
+C:\Users\Tobar\Documents\МГТУ ДЗ и прочее\Программирование\БКИТ\Лабораторная № 5\Лабораторная № 5\obj\Debug\netstandard2.0\Distance.dll
+C:\Users\Tobar\Documents\МГТУ ДЗ и прочее\Программирование\БКИТ\Лабораторная № 5\Лабораторная № 5\obj\Debug\netstandard2.0\Distance.pdb

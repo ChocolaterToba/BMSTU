@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "LabCheck/1.0.0": {
+        "dependencies": {
+          "Distance": "1.0.0"
+        },
+        "runtime": {
+          "LabCheck.dll": {}
+        }
+      },
+      "Distance/1.0.0": {
+        "runtime": {
+          "Distance.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "LabCheck/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Distance/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

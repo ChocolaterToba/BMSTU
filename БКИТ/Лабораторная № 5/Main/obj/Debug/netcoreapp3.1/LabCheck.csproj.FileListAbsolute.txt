@@ -1,0 +1,16 @@
+C:\Users\Tobar\Documents\МГТУ ДЗ и прочее\Программирование\БКИТ\Лабораторная № 5\Main\bin\Debug\netcoreapp3.1\LabCheck.exe
+C:\Users\Tobar\Documents\МГТУ ДЗ и прочее\Программирование\БКИТ\Лабораторная № 5\Main\bin\Debug\netcoreapp3.1\LabCheck.deps.json
+C:\Users\Tobar\Documents\МГТУ ДЗ и прочее\Программирование\БКИТ\Лабораторная № 5\Main\bin\Debug\netcoreapp3.1\LabCheck.runtimeconfig.json
+C:\Users\Tobar\Documents\МГТУ ДЗ и прочее\Программирование\БКИТ\Лабораторная № 5\Main\bin\Debug\netcoreapp3.1\LabCheck.runtimeconfig.dev.json
+C:\Users\Tobar\Documents\МГТУ ДЗ и прочее\Программирование\БКИТ\Лабораторная № 5\Main\bin\Debug\netcoreapp3.1\LabCheck.dll
+C:\Users\Tobar\Documents\МГТУ ДЗ и прочее\Программирование\БКИТ\Лабораторная № 5\Main\bin\Debug\netcoreapp3.1\LabCheck.pdb
+C:\Users\Tobar\Documents\МГТУ ДЗ и прочее\Программирование\БКИТ\Лабораторная № 5\Main\bin\Debug\netcoreapp3.1\Distance.dll
+C:\Users\Tobar\Documents\МГТУ ДЗ и прочее\Программирование\БКИТ\Лабораторная № 5\Main\bin\Debug\netcoreapp3.1\Distance.pdb
+C:\Users\Tobar\Documents\МГТУ ДЗ и прочее\Программирование\БКИТ\Лабораторная № 5\Main\obj\Debug\netcoreapp3.1\LabCheck.csprojAssemblyReference.cache
+C:\Users\Tobar\Documents\МГТУ ДЗ и прочее\Программирование\БКИТ\Лабораторная № 5\Main\obj\Debug\netcoreapp3.1\LabCheck.AssemblyInfoInputs.cache
+C:\Users\Tobar\Documents\МГТУ ДЗ и прочее\Программирование\БКИТ\Лабораторная № 5\Main\obj\Debug\netcoreapp3.1\LabCheck.AssemblyInfo.cs
+C:\Users\Tobar\Documents\МГТУ ДЗ и прочее\Программирование\БКИТ\Лабораторная № 5\Main\obj\Debug\netcoreapp3.1\LabCheck.csproj.CoreCompileInputs.cache
+C:\Users\Tobar\Documents\МГТУ ДЗ и прочее\Программирование\БКИТ\Лабораторная № 5\Main\obj\Debug\netcoreapp3.1\LabCheck.csproj.CopyComplete
+C:\Users\Tobar\Documents\МГТУ ДЗ и прочее\Программирование\БКИТ\Лабораторная № 5\Main\obj\Debug\netcoreapp3.1\LabCheck.dll
+C:\Users\Tobar\Documents\МГТУ ДЗ и прочее\Программирование\БКИТ\Лабораторная № 5\Main\obj\Debug\netcoreapp3.1\LabCheck.pdb
+C:\Users\Tobar\Documents\МГТУ ДЗ и прочее\Программирование\БКИТ\Лабораторная № 5\Main\obj\Debug\netcoreapp3.1\LabCheck.genruntimeconfig.cache
