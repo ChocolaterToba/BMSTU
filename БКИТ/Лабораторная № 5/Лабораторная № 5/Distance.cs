@@ -7,7 +7,7 @@ namespace Лабораторная___5
         static public int Levenshtain(string first, string second)
         {
             int[,] d = new int[first.Length + 1, second.Length + 1];
-            
+
             for (int i = 1; i <= first.Length; ++i)
             {
                 d[i, 0] = i;
@@ -85,7 +85,7 @@ namespace Лабораторная___5
                 alphabet[first[i - 1] - 0] = i;
             }
 
-            return d[first.Length, second.Length];
+            return d[first.Length + 1, second.Length + 1];
         }
     }
 }

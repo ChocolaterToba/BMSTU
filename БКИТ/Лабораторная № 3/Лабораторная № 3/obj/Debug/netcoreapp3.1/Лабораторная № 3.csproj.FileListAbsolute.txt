@@ -18,3 +18,23 @@ C:\Users\Михаил\Documents\МГТУ ДЗ и прочее\Программи
 C:\Users\Михаил\Documents\МГТУ ДЗ и прочее\Программирование\БКИТ\Лабораторная № 3\Лабораторная № 3\bin\Debug\netcoreapp3.1\MatrixProject.dll
 C:\Users\Михаил\Documents\МГТУ ДЗ и прочее\Программирование\БКИТ\Лабораторная № 3\Лабораторная № 3\bin\Debug\netcoreapp3.1\FigureProject.pdb
 C:\Users\Михаил\Documents\МГТУ ДЗ и прочее\Программирование\БКИТ\Лабораторная № 3\Лабораторная № 3\bin\Debug\netcoreapp3.1\MatrixProject.pdb
+C:\Users\Tobar\Documents\МГТУ ДЗ и прочее\Программирование\БКИТ\Лабораторная № 3\Лабораторная № 3\bin\Debug\netcoreapp3.1\Лабораторная № 3.exe
+C:\Users\Tobar\Documents\МГТУ ДЗ и прочее\Программирование\БКИТ\Лабораторная № 3\Лабораторная № 3\bin\Debug\netcoreapp3.1\Лабораторная № 3.deps.json
+C:\Users\Tobar\Documents\МГТУ ДЗ и прочее\Программирование\БКИТ\Лабораторная № 3\Лабораторная № 3\bin\Debug\netcoreapp3.1\Лабораторная № 3.runtimeconfig.json
+C:\Users\Tobar\Documents\МГТУ ДЗ и прочее\Программирование\БКИТ\Лабораторная № 3\Лабораторная № 3\bin\Debug\netcoreapp3.1\Лабораторная № 3.runtimeconfig.dev.json
+C:\Users\Tobar\Documents\МГТУ ДЗ и прочее\Программирование\БКИТ\Лабораторная № 3\Лабораторная № 3\bin\Debug\netcoreapp3.1\Лабораторная № 3.dll
+C:\Users\Tobar\Documents\МГТУ ДЗ и прочее\Программирование\БКИТ\Лабораторная № 3\Лабораторная № 3\bin\Debug\netcoreapp3.1\Лабораторная № 3.pdb
+C:\Users\Tobar\Documents\МГТУ ДЗ и прочее\Программирование\БКИТ\Лабораторная № 3\Лабораторная № 3\bin\Debug\netcoreapp3.1\FigureProject.dll
+C:\Users\Tobar\Documents\МГТУ ДЗ и прочее\Программирование\БКИТ\Лабораторная № 3\Лабораторная № 3\bin\Debug\netcoreapp3.1\MatrixProject.dll
+C:\Users\Tobar\Documents\МГТУ ДЗ и прочее\Программирование\БКИТ\Лабораторная № 3\Лабораторная № 3\bin\Debug\netcoreapp3.1\SimpleListProject.dll
+C:\Users\Tobar\Documents\МГТУ ДЗ и прочее\Программирование\БКИТ\Лабораторная № 3\Лабораторная № 3\bin\Debug\netcoreapp3.1\FigureProject.pdb
+C:\Users\Tobar\Documents\МГТУ ДЗ и прочее\Программирование\БКИТ\Лабораторная № 3\Лабораторная № 3\bin\Debug\netcoreapp3.1\MatrixProject.pdb
+C:\Users\Tobar\Documents\МГТУ ДЗ и прочее\Программирование\БКИТ\Лабораторная № 3\Лабораторная № 3\bin\Debug\netcoreapp3.1\SimpleListProject.pdb
+C:\Users\Tobar\Documents\МГТУ ДЗ и прочее\Программирование\БКИТ\Лабораторная № 3\Лабораторная № 3\obj\Debug\netcoreapp3.1\Лабораторная № 3.csprojAssemblyReference.cache
+C:\Users\Tobar\Documents\МГТУ ДЗ и прочее\Программирование\БКИТ\Лабораторная № 3\Лабораторная № 3\obj\Debug\netcoreapp3.1\Лабораторная № 3.AssemblyInfoInputs.cache
+C:\Users\Tobar\Documents\МГТУ ДЗ и прочее\Программирование\БКИТ\Лабораторная № 3\Лабораторная № 3\obj\Debug\netcoreapp3.1\Лабораторная № 3.AssemblyInfo.cs
+C:\Users\Tobar\Documents\МГТУ ДЗ и прочее\Программирование\БКИТ\Лабораторная № 3\Лабораторная № 3\obj\Debug\netcoreapp3.1\Лабораторная № 3.csproj.CoreCompileInputs.cache
+C:\Users\Tobar\Documents\МГТУ ДЗ и прочее\Программирование\БКИТ\Лабораторная № 3\Лабораторная № 3\obj\Debug\netcoreapp3.1\Лабораторная № 3.csproj.CopyComplete
+C:\Users\Tobar\Documents\МГТУ ДЗ и прочее\Программирование\БКИТ\Лабораторная № 3\Лабораторная № 3\obj\Debug\netcoreapp3.1\Лабораторная № 3.dll
+C:\Users\Tobar\Documents\МГТУ ДЗ и прочее\Программирование\БКИТ\Лабораторная № 3\Лабораторная № 3\obj\Debug\netcoreapp3.1\Лабораторная № 3.pdb
+C:\Users\Tobar\Documents\МГТУ ДЗ и прочее\Программирование\БКИТ\Лабораторная № 3\Лабораторная № 3\obj\Debug\netcoreapp3.1\Лабораторная № 3.genruntimeconfig.cache

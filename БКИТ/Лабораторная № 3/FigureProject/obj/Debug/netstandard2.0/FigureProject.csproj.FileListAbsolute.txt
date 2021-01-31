@@ -7,3 +7,12 @@ C:\Users\Михаил\Documents\МГТУ ДЗ и прочее\Программи
 C:\Users\Михаил\Documents\МГТУ ДЗ и прочее\Программирование\БКИТ\Лабораторная № 3\FigureProject\obj\Debug\netstandard2.0\FigureProject.csproj.CoreCompileInputs.cache
 C:\Users\Михаил\Documents\МГТУ ДЗ и прочее\Программирование\БКИТ\Лабораторная № 3\FigureProject\obj\Debug\netstandard2.0\FigureProject.dll
 C:\Users\Михаил\Documents\МГТУ ДЗ и прочее\Программирование\БКИТ\Лабораторная № 3\FigureProject\obj\Debug\netstandard2.0\FigureProject.pdb
+C:\Users\Tobar\Documents\МГТУ ДЗ и прочее\Программирование\БКИТ\Лабораторная № 3\FigureProject\bin\Debug\netstandard2.0\FigureProject.deps.json
+C:\Users\Tobar\Documents\МГТУ ДЗ и прочее\Программирование\БКИТ\Лабораторная № 3\FigureProject\bin\Debug\netstandard2.0\FigureProject.dll
+C:\Users\Tobar\Documents\МГТУ ДЗ и прочее\Программирование\БКИТ\Лабораторная № 3\FigureProject\bin\Debug\netstandard2.0\FigureProject.pdb
+C:\Users\Tobar\Documents\МГТУ ДЗ и прочее\Программирование\БКИТ\Лабораторная № 3\FigureProject\obj\Debug\netstandard2.0\FigureProject.csprojAssemblyReference.cache
+C:\Users\Tobar\Documents\МГТУ ДЗ и прочее\Программирование\БКИТ\Лабораторная № 3\FigureProject\obj\Debug\netstandard2.0\FigureProject.AssemblyInfoInputs.cache
+C:\Users\Tobar\Documents\МГТУ ДЗ и прочее\Программирование\БКИТ\Лабораторная № 3\FigureProject\obj\Debug\netstandard2.0\FigureProject.AssemblyInfo.cs
+C:\Users\Tobar\Documents\МГТУ ДЗ и прочее\Программирование\БКИТ\Лабораторная № 3\FigureProject\obj\Debug\netstandard2.0\FigureProject.csproj.CoreCompileInputs.cache
+C:\Users\Tobar\Documents\МГТУ ДЗ и прочее\Программирование\БКИТ\Лабораторная № 3\FigureProject\obj\Debug\netstandard2.0\FigureProject.dll
+C:\Users\Tobar\Documents\МГТУ ДЗ и прочее\Программирование\БКИТ\Лабораторная № 3\FigureProject\obj\Debug\netstandard2.0\FigureProject.pdb

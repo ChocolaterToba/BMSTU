@@ -7,3 +7,12 @@ C:\Users\Михаил\Documents\МГТУ ДЗ и прочее\Программи
 C:\Users\Михаил\Documents\МГТУ ДЗ и прочее\Программирование\БКИТ\Лабораторная № 3\SimpleList\obj\Debug\netstandard2.0\SimpleListProject.csproj.CoreCompileInputs.cache
 C:\Users\Михаил\Documents\МГТУ ДЗ и прочее\Программирование\БКИТ\Лабораторная № 3\SimpleList\obj\Debug\netstandard2.0\SimpleListProject.dll
 C:\Users\Михаил\Documents\МГТУ ДЗ и прочее\Программирование\БКИТ\Лабораторная № 3\SimpleList\obj\Debug\netstandard2.0\SimpleListProject.pdb
+C:\Users\Tobar\Documents\МГТУ ДЗ и прочее\Программирование\БКИТ\Лабораторная № 3\SimpleList\bin\Debug\netstandard2.0\SimpleListProject.deps.json
+C:\Users\Tobar\Documents\МГТУ ДЗ и прочее\Программирование\БКИТ\Лабораторная № 3\SimpleList\bin\Debug\netstandard2.0\SimpleListProject.dll
+C:\Users\Tobar\Documents\МГТУ ДЗ и прочее\Программирование\БКИТ\Лабораторная № 3\SimpleList\bin\Debug\netstandard2.0\SimpleListProject.pdb
+C:\Users\Tobar\Documents\МГТУ ДЗ и прочее\Программирование\БКИТ\Лабораторная № 3\SimpleList\obj\Debug\netstandard2.0\SimpleListProject.csprojAssemblyReference.cache
+C:\Users\Tobar\Documents\МГТУ ДЗ и прочее\Программирование\БКИТ\Лабораторная № 3\SimpleList\obj\Debug\netstandard2.0\SimpleListProject.AssemblyInfoInputs.cache
+C:\Users\Tobar\Documents\МГТУ ДЗ и прочее\Программирование\БКИТ\Лабораторная № 3\SimpleList\obj\Debug\netstandard2.0\SimpleListProject.AssemblyInfo.cs
+C:\Users\Tobar\Documents\МГТУ ДЗ и прочее\Программирование\БКИТ\Лабораторная № 3\SimpleList\obj\Debug\netstandard2.0\SimpleListProject.csproj.CoreCompileInputs.cache
+C:\Users\Tobar\Documents\МГТУ ДЗ и прочее\Программирование\БКИТ\Лабораторная № 3\SimpleList\obj\Debug\netstandard2.0\SimpleListProject.dll
+C:\Users\Tobar\Documents\МГТУ ДЗ и прочее\Программирование\БКИТ\Лабораторная № 3\SimpleList\obj\Debug\netstandard2.0\SimpleListProject.pdb

@@ -7,7 +7,7 @@ namespace Main
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Input 2 string for comparison, each from new line");
+            Console.WriteLine("Input 2 strings for comparison, each from new line");
             string first = Console.ReadLine();
             string second = Console.ReadLine();
             Console.WriteLine("Resulting Levensthtein distance: {0}", Levenshtain(first, second));

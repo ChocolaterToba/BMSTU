@@ -13,10 +13,10 @@ C:\Users\Tobar\Documents\МГТУ ДЗ и прочее\Программиров�
 C:\Users\Tobar\Documents\МГТУ ДЗ и прочее\Программирование\БКИТ\Лабораторная № 4\lab4\bin\Debug\lab4.pdb
 C:\Users\Tobar\Documents\МГТУ ДЗ и прочее\Программирование\БКИТ\Лабораторная № 4\lab4\bin\Debug\Distance.dll
 C:\Users\Tobar\Documents\МГТУ ДЗ и прочее\Программирование\БКИТ\Лабораторная № 4\lab4\obj\Debug\lab4.csprojAssemblyReference.cache
-C:\Users\Tobar\Documents\МГТУ ДЗ и прочее\Программирование\БКИТ\Лабораторная № 4\lab4\obj\Debug\lab4.Form1.resources
 C:\Users\Tobar\Documents\МГТУ ДЗ и прочее\Программирование\БКИТ\Лабораторная № 4\lab4\obj\Debug\lab4.Properties.Resources.resources
 C:\Users\Tobar\Documents\МГТУ ДЗ и прочее\Программирование\БКИТ\Лабораторная № 4\lab4\obj\Debug\lab4.csproj.GenerateResource.cache
 C:\Users\Tobar\Documents\МГТУ ДЗ и прочее\Программирование\БКИТ\Лабораторная № 4\lab4\obj\Debug\lab4.csproj.CoreCompileInputs.cache
 C:\Users\Tobar\Documents\МГТУ ДЗ и прочее\Программирование\БКИТ\Лабораторная № 4\lab4\obj\Debug\lab4.csproj.CopyComplete
 C:\Users\Tobar\Documents\МГТУ ДЗ и прочее\Программирование\БКИТ\Лабораторная № 4\lab4\obj\Debug\lab4.exe
 C:\Users\Tobar\Documents\МГТУ ДЗ и прочее\Программирование\БКИТ\Лабораторная № 4\lab4\obj\Debug\lab4.pdb
+C:\Users\Tobar\Documents\МГТУ ДЗ и прочее\Программирование\БКИТ\Лабораторная № 4\lab4\obj\Debug\lab4.Form.resources

@@ -1,11 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "gKiY0FI5jd4jzMGOgrqSJhAQ80GcwQnyjdTVXJKAw/RE/cx2nAGO0K2eAxDqNLhzU89rpBE7MSHzJAns3ZB6IQ==",
+  "dgSpecHash": "MDH28vQZfGeDbWq3eHLeY6RvlCcm5OvRQeX2uRwRCEhTjvEH5tVj5mR1Bb2Hs3+UwJv3SB6lBYRA+eP99S6eow==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Михаил\\Documents\\МГТУ ДЗ и прочее\\Программирование\\БКИТ\\Лабораторная № 3\\MatrixProject\\MatrixProject.csproj",
+  "projectFilePath": "C:\\Users\\Tobar\\Documents\\МГТУ ДЗ и прочее\\Программирование\\БКИТ\\Лабораторная № 3\\MatrixProject\\MatrixProject.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Михаил\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
-    "C:\\Users\\Михаил\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+    "C:\\Users\\Tobar\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\Tobar\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
   ],
   "logs": []
 }

@@ -1,7 +1,7 @@
 ﻿
 namespace lab4
 {
-    partial class Form1
+    partial class Form
     {
         /// <summary>
         /// Обязательная переменная конструктора.

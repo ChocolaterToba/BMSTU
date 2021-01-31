@@ -63,19 +63,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Михаил\\.nuget\\packages\\": {}
+    "C:\\Users\\Tobar\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Михаил\\Documents\\МГТУ ДЗ и прочее\\Программирование\\БКИТ\\Лабораторная № 3\\Лабораторная № 3\\Лабораторная № 3.csproj",
+      "projectUniqueName": "C:\\Users\\Tobar\\Documents\\МГТУ ДЗ и прочее\\Программирование\\БКИТ\\Лабораторная № 3\\Лабораторная № 3\\Лабораторная № 3.csproj",
       "projectName": "Лабораторная № 3",
-      "projectPath": "C:\\Users\\Михаил\\Documents\\МГТУ ДЗ и прочее\\Программирование\\БКИТ\\Лабораторная № 3\\Лабораторная № 3\\Лабораторная № 3.csproj",
-      "packagesPath": "C:\\Users\\Михаил\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Михаил\\Documents\\МГТУ ДЗ и прочее\\Программирование\\БКИТ\\Лабораторная № 3\\Лабораторная № 3\\obj\\",
+      "projectPath": "C:\\Users\\Tobar\\Documents\\МГТУ ДЗ и прочее\\Программирование\\БКИТ\\Лабораторная № 3\\Лабораторная № 3\\Лабораторная № 3.csproj",
+      "packagesPath": "C:\\Users\\Tobar\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Tobar\\Documents\\МГТУ ДЗ и прочее\\Программирование\\БКИТ\\Лабораторная № 3\\Лабораторная № 3\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Михаил\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Tobar\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -87,15 +87,16 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "C:\\Users\\Михаил\\Documents\\МГТУ ДЗ и прочее\\Программирование\\БКИТ\\Лабораторная № 3\\FigureProject\\FigureProject.csproj": {
-              "projectPath": "C:\\Users\\Михаил\\Documents\\МГТУ ДЗ и прочее\\Программирование\\БКИТ\\Лабораторная № 3\\FigureProject\\FigureProject.csproj"
+            "C:\\Users\\Tobar\\Documents\\МГТУ ДЗ и прочее\\Программирование\\БКИТ\\Лабораторная № 3\\FigureProject\\FigureProject.csproj": {
+              "projectPath": "C:\\Users\\Tobar\\Documents\\МГТУ ДЗ и прочее\\Программирование\\БКИТ\\Лабораторная № 3\\FigureProject\\FigureProject.csproj"
             },
-            "C:\\Users\\Михаил\\Documents\\МГТУ ДЗ и прочее\\Программирование\\БКИТ\\Лабораторная № 3\\MatrixProject\\MatrixProject.csproj": {
-              "projectPath": "C:\\Users\\Михаил\\Documents\\МГТУ ДЗ и прочее\\Программирование\\БКИТ\\Лабораторная № 3\\MatrixProject\\MatrixProject.csproj"
+            "C:\\Users\\Tobar\\Documents\\МГТУ ДЗ и прочее\\Программирование\\БКИТ\\Лабораторная № 3\\MatrixProject\\MatrixProject.csproj": {
+              "projectPath": "C:\\Users\\Tobar\\Documents\\МГТУ ДЗ и прочее\\Программирование\\БКИТ\\Лабораторная № 3\\MatrixProject\\MatrixProject.csproj"
             },
-            "C:\\Users\\Михаил\\Documents\\МГТУ ДЗ и прочее\\Программирование\\БКИТ\\Лабораторная № 3\\SimpleList\\SimpleListProject.csproj": {
-              "projectPath": "C:\\Users\\Михаил\\Documents\\МГТУ ДЗ и прочее\\Программирование\\БКИТ\\Лабораторная № 3\\SimpleList\\SimpleListProject.csproj"
+            "C:\\Users\\Tobar\\Documents\\МГТУ ДЗ и прочее\\Программирование\\БКИТ\\Лабораторная № 3\\SimpleList\\SimpleListProject.csproj": {
+              "projectPath": "C:\\Users\\Tobar\\Documents\\МГТУ ДЗ и прочее\\Программирование\\БКИТ\\Лабораторная № 3\\SimpleList\\SimpleListProject.csproj"
             }
           }
         }
@@ -108,6 +109,7 @@
     },
     "frameworks": {
       "netcoreapp3.1": {
+        "targetAlias": "netcoreapp3.1",
         "imports": [
           "net461",
           "net462",
@@ -123,7 +125,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
       }
     }
   }

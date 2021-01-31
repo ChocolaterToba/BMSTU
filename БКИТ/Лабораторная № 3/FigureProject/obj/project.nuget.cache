@@ -1,11 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "pHoA8i1yRQ4px2r68kdQDkgGmX5Rb5cGzOpqGVCXTrMHfhHDZV9osqDHQlM9QY38sYkDcBQefOFG9T6r9uOIgQ==",
+  "dgSpecHash": "4RfMVT8u4gZwjwNJS2Lgf3VOs7bDpe10+rSEFpcOBmhxOXPfwYoNvaBoGgueJMkIX2YfpPtDz7y+JUatlh0Mug==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Михаил\\Documents\\МГТУ ДЗ и прочее\\Программирование\\БКИТ\\Лабораторная № 3\\FigureProject\\FigureProject.csproj",
+  "projectFilePath": "C:\\Users\\Tobar\\Documents\\МГТУ ДЗ и прочее\\Программирование\\БКИТ\\Лабораторная № 3\\FigureProject\\FigureProject.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Михаил\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
-    "C:\\Users\\Михаил\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+    "C:\\Users\\Tobar\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\Tobar\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
   ],
   "logs": []
 }
