@@ -6,6 +6,7 @@
 
 #include <cstdlib>
 #include <string>
+#include <vector>
 
 LRESULT CALLBACK WndProc(HWND, UINT, WPARAM, LPARAM);
 
@@ -116,40 +117,80 @@ int WINAPI _tWinMain(HINSTANCE This,		 // Дескриптор текущего 
 	return 0;
 }
 
+typedef struct  rectInfo {
+	RECT rectangle;
+	COLORREF color;
+};
+
+void PaintRectangles(HWND hWnd, std::vector<rectInfo>& rectangles) {
+	PAINTSTRUCT ps;
+	HDC hdc = BeginPaint(hWnd, &ps);
+	SelectObject(hdc, GetStockObject(DC_PEN));
+	SelectObject(hdc, GetStockObject(DC_BRUSH));
+	for (const rectInfo& rect : rectangles) {
+		SetDCBrushColor(hdc, rect.color);
+		Rectangle(hdc, rect.rectangle.left, rect.rectangle.top, rect.rectangle.right, rect.rectangle.bottom);
+	}
+}
+
 // Оконная функция вызывается операционной системой
 // и получает сообщения из очереди для данного приложения
 
 LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
 {
+	static bool leftButtonPressed = false;
+	static bool rightButtonPressed = false;
+	static std::vector<rectInfo> rectangles = std::vector<rectInfo>();
 	switch (message)		 // Обработчик сообщений
 	{
 	case WM_DESTROY:
 		PostQuitMessage(0);
 		break; 			// Завершение программы
 
-	//case WM_PAINT:
 	case WM_LBUTTONDOWN: {
-		RECT rectangle;
-		POINT ptClientUL;
-		POINT ptClientBR;
-
-		DwmGetWindowAttribute(hWnd, DWMWA_EXTENDED_FRAME_BOUNDS, &rectangle, sizeof(rectangle));
-		RandomShrink(&rectangle);
-
- 		HDC hdc = CreateDC(TEXT("DISPLAY"), NULL, NULL, NULL);
-		FillRect(hdc, &rectangle, (HBRUSH)(CreateSolidBrush(RGB(RandTill(255), RandTill(255), RandTill(255)))));
+		leftButtonPressed = true;
+		InvalidateRect(hWnd, NULL, TRUE);
 		break;
 	}
 
 	case WM_RBUTTONDOWN: {
-		POINT cursorPos = { 0, 0 };
-		GetCursorPos(&cursorPos);
+		rightButtonPressed = true;
+		InvalidateRect(hWnd, NULL, TRUE);
+		break;
+	}
 
-		HDC hdc = CreateDC(TEXT("DISPLAY"), NULL, NULL, NULL);
-		TextOut(hdc, cursorPos.x, cursorPos.y, s2ws(std::string("Это окно закроется через 30 секунд")).c_str(), 35);
+	case WM_PAINT: {
+		if (leftButtonPressed) {
+			leftButtonPressed = false;
+			RECT rectangle;
+			GetClientRect(hWnd, &rectangle);
+			RandomShrink(&rectangle);
+			COLORREF color = RGB(RandTill(255), RandTill(255), RandTill(255));
+			rectangles.emplace_back(rectInfo{ rectangle, color });
 
-		TimeoutInfo* info = new TimeoutInfo(hWnd, 30);
-		CreateThread(NULL, 0, MinimizeWindowTimeouted, info, 0, NULL);
+			PaintRectangles(hWnd, rectangles);
+
+		} else if (rightButtonPressed) {
+			rightButtonPressed = false;
+			POINT cursorPos = { 0, 0 };
+			GetCursorPos(&cursorPos);
+
+			int timeout = 3;  // Timeout in seconds
+			std::string timeoutString = std::to_string(timeout);
+
+			HDC hdc = CreateDC(TEXT("DISPLAY"), NULL, NULL, NULL);
+			TextOut(hdc, cursorPos.x, cursorPos.y, s2ws(
+				std::string("Это окно свернётся через ") +
+				timeoutString +
+				std::string(" секунд")).c_str(), 32 + timeoutString.length());
+
+			TimeoutInfo* info = new TimeoutInfo(hWnd, timeout);
+			CreateThread(NULL, 0, MinimizeWindowTimeouted, info, 0, NULL);
+
+		} else {  // Window moving
+			PaintRectangles(hWnd, rectangles);
+		}
+		break;
 	}
 
 	default: 			// Обработка сообщения по умолчанию
