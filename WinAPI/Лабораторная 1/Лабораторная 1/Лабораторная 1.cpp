@@ -122,15 +122,16 @@ typedef struct  rectInfo {
 	COLORREF color;
 };
 
-void PaintRectangles(HWND hWnd, std::vector<rectInfo>& rectangles) {
-	PAINTSTRUCT ps;
-	HDC hdc = BeginPaint(hWnd, &ps);
+void PaintRectangles(HWND hWnd, HDC hdc, std::vector<rectInfo>& rectangles) {
+	
 	SelectObject(hdc, GetStockObject(DC_PEN));
 	SelectObject(hdc, GetStockObject(DC_BRUSH));
 	for (const rectInfo& rect : rectangles) {
 		SetDCBrushColor(hdc, rect.color);
 		Rectangle(hdc, rect.rectangle.left, rect.rectangle.top, rect.rectangle.right, rect.rectangle.bottom);
 	}
+
+	
 }
 
 // Оконная функция вызывается операционной системой
@@ -160,6 +161,8 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
 	}
 
 	case WM_PAINT: {
+		PAINTSTRUCT ps;
+		HDC hdc = BeginPaint(hWnd, &ps);
 		if (leftButtonPressed) {
 			leftButtonPressed = false;
 			RECT rectangle;
@@ -168,7 +171,7 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
 			COLORREF color = RGB(RandTill(255), RandTill(255), RandTill(255));
 			rectangles.emplace_back(rectInfo{ rectangle, color });
 
-			PaintRectangles(hWnd, rectangles);
+			PaintRectangles(hWnd, hdc, rectangles);
 
 		} else if (rightButtonPressed) {
 			rightButtonPressed = false;
@@ -178,7 +181,9 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
 			int timeout = 3;  // Timeout in seconds
 			std::string timeoutString = std::to_string(timeout);
 
-			HDC hdc = CreateDC(TEXT("DISPLAY"), NULL, NULL, NULL);
+			PaintRectangles(hWnd, hdc, rectangles);
+
+			SetBkMode(hdc, TRANSPARENT);
 			TextOut(hdc, cursorPos.x, cursorPos.y, s2ws(
 				std::string("Это окно свернётся через ") +
 				timeoutString +
@@ -188,8 +193,9 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
 			CreateThread(NULL, 0, MinimizeWindowTimeouted, info, 0, NULL);
 
 		} else {  // Window moving
-			PaintRectangles(hWnd, rectangles);
+			PaintRectangles(hWnd, hdc, rectangles);
 		}
+		EndPaint(hWnd, &ps);
 		break;
 	}
 
