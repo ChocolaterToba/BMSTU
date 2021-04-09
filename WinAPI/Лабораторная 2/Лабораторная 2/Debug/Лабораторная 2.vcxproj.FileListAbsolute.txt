@@ -1,2 +1,0 @@
-C:\Users\Михаил\Documents\МГТУ ДЗ и прочие\Программирование\WinAPI\Лабораторная 2\Лабораторная 2\Debug\First App.exe
-C:\Users\Михаил\Documents\МГТУ ДЗ и прочие\Программирование\WinAPI\Лабораторная 2\Лабораторная 2\Debug\First App.pdb

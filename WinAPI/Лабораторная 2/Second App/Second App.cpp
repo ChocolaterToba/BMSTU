@@ -51,6 +51,18 @@ std::wstring s2ws(const std::string& s)
 	return r;
 }
 
+// Center message string on window specified by hWnd with specified hdc
+POINT CenterString(HWND hWnd, HDC hdc, std::string message) {
+	RECT rectangle;
+	GetClientRect(hWnd, &rectangle);
+	SIZE messageSize;
+	GetTextExtentPoint(hdc, s2ws(message).c_str(), message.length(), &messageSize);
+	return POINT {
+		(rectangle.right - rectangle.left - messageSize.cx) / 2,  // Centering message horizontally
+		(rectangle.bottom - rectangle.top - messageSize.cy) / 2,  // Centering message vertically
+	};
+}
+
 TCHAR WinName[] = _T("MainFrame");
 
 int WINAPI _tWinMain(HINSTANCE This,		 // Дескриптор текущего приложения 
@@ -116,7 +128,8 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
 		break; 			// Завершение программы
 
 	case WM_USER+1: case WM_LBUTTONDOWN: {
-		messageString = "Received message from first app (left button pressed)";
+		messageString = "Received message from first app (left button pressed): ";
+		messageString += std::to_string(*(int*)wParam);
 		InvalidateRect(hWnd, NULL, TRUE);
 		break;
 	}
@@ -134,9 +147,8 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
 		HDC hdc = BeginPaint(hWnd, &ps);
 		SetBkMode(hdc, TRANSPARENT);
 		if (messageString != "") {
-			POINT cursorPos = { 0, 0 };
-			GetCursorPos(&cursorPos);
-			TextOut(hdc, cursorPos.x, cursorPos.y, s2ws(messageString).c_str(), messageString.length());
+			POINT messageStartPos = CenterString(hWnd, hdc, messageString);
+			TextOut(hdc, messageStartPos.x, messageStartPos.y, s2ws(messageString).c_str(), messageString.length());
 			messageString = "";
 		}
 		EndPaint(hWnd, &ps);
